@@ -1,0 +1,537 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 2000px;
+  background-color: #000;
+  overflow-x: hidden;
+}
+body .nav {
+  background-color: #000;
+  margin: 1rem 0 0 0;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 5;
+  position: relative;
+}
+body .nav .nav-main-title {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .nav .nav-main-title .rockstar-logo {
+  padding: 0 0.5rem 0 0.2rem;
+  border-right: 2px solid #777;
+}
+body .nav .nav-main-title .gtav-logo {
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+body .nav .nav-sections {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .nav .nav-sections .nav-sections__btn {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+body .nav .nav-sections .nav-sections__btn:hover, body .nav .nav-sections .nav-sections__btn:active {
+  box-shadow: inset 0px -3px #fff;
+}
+body .nav .nav-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+}
+body .nav .nav-account button {
+  padding: 0.9rem 1.5rem;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+body .nav .nav-account button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+body .nav .nav-account a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50px;
+  background-color: rgb(56, 56, 56);
+}
+body .nav .nav-mobile__menuHbr {
+  display: none;
+}
+body .dropdown-menu {
+  display: none;
+}
+body .dropdown-menu__closed {
+  display: none;
+}
+body .banner-container {
+  position: relative;
+}
+body .banner-container .bannerImg-background {
+  height: 70vh;
+  width: 100vw;
+  max-width: 2000px;
+  background-image: url(../media/banner.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 6%, 100% 11%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 6%, 100% 11%, 100% 100%, 0% 100%);
+}
+body .banner-container .bannerText-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 60%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8900862069) 0%, rgba(0, 0, 0, 0.4568965517) 82%, rgba(0, 0, 0, 0) 100%);
+}
+body .banner-container .bannerText-container .bannerText-container__logos {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .banner-container .bannerText-container .bannerText-container__logos img {
+  height: 100px;
+  margin: 0 1rem 0 0;
+}
+body .banner-container .bannerText-container .bannerText-container__title {
+  color: #fff;
+  width: 70%;
+  max-width: 580px;
+}
+body .banner-container .bannerText-container .bannerText-container__title h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+body .banner-container .bannerText-container .bannerText-container__btns {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+body .banner-container .bannerText-container .bannerText-container__btns button {
+  width: 200px;
+  height: 60px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+body .banner-container .bannerText-container .bannerText-container__btns button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+body .MainSpects-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  background-color: #777;
+  margin: 2.5rem auto;
+}
+body .MainSpects-container .MainSpects-characters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 70vh;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: rgb(68, 68, 68);
+}
+body .MainSpects-container .MainSpects-characters .MainSpects-characters__img {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 500px;
+  border: 2px solid red;
+}
+body .MainSpects-container .MainSpects-characters div {
+  border: 2px solid red;
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+body .MainSpects-container .MainSpects-characters div img {
+  width: 120px;
+}
+body .MainSpects-container .MainSpects-characters div h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0;
+}
+body .MainSpects-container .MainSpects-characters div p {
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+@media (max-width: 1150px) {
+  body .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem auto;
+    z-index: 3;
+  }
+  body .nav .nav-sections {
+    display: none;
+  }
+  body .nav .nav-account {
+    display: none;
+  }
+  body .nav .nav-mobile__menuHbr {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+  }
+  body .nav .nav-mobile__menuHbr .nav-mobile__account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body .nav .nav-mobile__menuHbr .nav-mobile__account a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50px;
+    background-color: rgb(56, 56, 56);
+  }
+  body .nav .nav-mobile__menuHbr .hamburger-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+  }
+  body .nav .nav-mobile__menuHbr .hamburger-btn span {
+    height: 3.2px;
+    width: 90%;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #fff;
+    transition: all 0.2s;
+  }
+  body .nav .nav-mobile__menuHbr .open span:nth-child(1) {
+    background-color: transparent;
+    transform: translateY(10px);
+  }
+  body .nav .nav-mobile__menuHbr .open span:nth-child(3) {
+    transform: translateY(-10px);
+    background-color: transparent;
+  }
+  @-webkit-keyframes dropMenu {
+    0% {
+      transform: translate(0, -100%);
+      z-index: 1;
+      height: 0;
+      background-color: #000;
+    }
+    100% {
+      transform: translate(0, 0);
+      z-index: 1;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.937);
+    }
+  }
+  @keyframes dropMenu {
+    0% {
+      transform: translate(0, -100%);
+      z-index: 1;
+      height: 0;
+      background-color: #000;
+    }
+    100% {
+      transform: translate(0, 0);
+      z-index: 1;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.937);
+    }
+  }
+  @-webkit-keyframes appearSections {
+    0% {
+      color: transparent;
+      cursor: none;
+    }
+    99% {
+      color: transparent;
+      cursor: none;
+    }
+    100% {
+      color: #fff;
+      cursor: none;
+    }
+  }
+  @keyframes appearSections {
+    0% {
+      color: transparent;
+      cursor: none;
+    }
+    99% {
+      color: transparent;
+      cursor: none;
+    }
+    100% {
+      color: #fff;
+      cursor: none;
+    }
+  }
+  body .dropdown-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: rgba(0, 0, 0, 0.937);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    height: 100vh;
+    -webkit-animation: dropMenu 1.5s;
+            animation: dropMenu 1.5s;
+    position: fixed;
+    z-index: 5;
+    border-bottom: 2px solid greenyellow;
+  }
+  body .dropdown-menu .dropmenu-sections__btn {
+    width: 95%;
+    text-align: left;
+    padding: 1rem 0 1rem 5%;
+    text-decoration: none;
+    -webkit-animation: appearSections 1.5s;
+            animation: appearSections 1.5s;
+  }
+  body .dropdown-menu .dropmenu-sections__btn span {
+    -webkit-animation: appearSections 1.5s;
+            animation: appearSections 1.5s;
+    font-weight: 800;
+    font-size: 24px;
+    color: #fff;
+  }
+  body .dropdown-menu .dropmenu-sections__btn:hover {
+    background-color: rgba(119, 119, 119, 0.178);
+    transition: all 0.2s;
+  }
+  body .dropdown-menu .dropmenu-sections__btn:hover span {
+    color: rgb(214, 168, 28);
+    transition: all 0.2s;
+  }
+  body .banner-container {
+    height: 50vh;
+    width: 100vw;
+  }
+  body .banner-container div {
+    height: 100%;
+  }
+  body .banner-container div .bannerImg-background {
+    height: 50vh;
+  }
+  body .banner-container div .bannerText-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 36%, rgba(0, 0, 0, 0) 100%);
+  }
+  body .banner-container div .bannerText-container .bannerText-container__logos {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__logos img {
+    height: 100px;
+    margin: 0 1rem;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__title {
+    width: 90%;
+    max-width: none;
+    text-align: center;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__title h1 {
+    font-size: 2rem;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__btns {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__btns button {
+    width: 250px;
+    margin-right: 0;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__btns button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+  body .MainSpects-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background-color: rgb(58, 179, 30);
+    margin: 2.5rem auto;
+  }
+  body .MainSpects-container .MainSpects-characters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  body .MainSpects-container .MainSpects-characters .MainSpects-characters__img {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    border: 2px solid red;
+  }
+  body .MainSpects-container .MainSpects-characters div {
+    border: 2px solid red;
+    width: 80%;
+  }
+  body .MainSpects-container .MainSpects-characters div img {
+    border: 2px solid red;
+    margin: 0 auto;
+  }
+  body .MainSpects-container .MainSpects-characters div h2 {
+    font-weight: 700;
+    font-size: 2.7rem;
+  }
+  body .MainSpects-container .MainSpects-characters div p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+  }
+}
+@media (max-width: 600px) {
+  body .nav .nav-main-title {
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body .nav .nav-main-title .rockstar-logo {
+    padding: 0 0.5rem 0 0.2rem;
+    border-right: 2px solid #777;
+  }
+  body .nav .nav-main-title .gtav-logo {
+    height: 2rem;
+    width: 8rem;
+    margin-left: 0.5rem;
+  }
+  body .nav .nav-mobile__menuHbr {
+    width: 30%;
+  }
+  body .banner-container .bannerImg-background {
+    height: 70vh;
+  }
+  body .banner-container .bannerText-container {
+    background: linear-gradient(0deg, rgb(0, 0, 0) 36%, rgba(0, 0, 0, 0) 100%);
+  }
+  body .banner-container .bannerText-container .bannerText-container__btns {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  body .banner-container .bannerText-container .bannerText-container__btns button {
+    width: 80vw;
+  }
+  body .banner-container .bannerText-container .bannerText-container__btns button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+  body .MainSpects-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(58, 179, 30);
+    margin: 2.5rem auto;
+  }
+  body .MainSpects-container .MainSpects-characters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  body .MainSpects-container .MainSpects-characters .MainSpects-characters__img {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    border: 2px solid red;
+  }
+  body .MainSpects-container .MainSpects-characters div {
+    border: 2px solid red;
+    width: 90%;
+  }
+  body .MainSpects-container .MainSpects-characters div img {
+    border: 2px solid red;
+    margin: 0 auto;
+  }
+  body .MainSpects-container .MainSpects-characters div h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  body .MainSpects-container .MainSpects-characters div p {
+    font-size: 0.9rem;
+    font-weight: lighter;
+  }
+}/*# sourceMappingURL=style.css.map */
