@@ -160,8 +160,6 @@ body .banner-container .bannerText-container .bannerText-container__btns button:
 body .MainSpects-container {
   width: 100%;
   height: 100%;
-  border: 1px solid red;
-  background-color: #777;
   margin: 2.5rem auto;
 }
 body .MainSpects-container .MainSpects-characters {
@@ -172,17 +170,14 @@ body .MainSpects-container .MainSpects-characters {
   height: 70vh;
   max-width: 1500px;
   margin: 0 auto;
-  background-color: rgb(68, 68, 68);
 }
 body .MainSpects-container .MainSpects-characters .MainSpects-characters__img {
   width: 100%;
   max-width: 500px;
   height: 100%;
   max-height: 500px;
-  border: 2px solid red;
 }
 body .MainSpects-container .MainSpects-characters div {
-  border: 2px solid red;
   width: 400px;
   height: 100%;
   display: flex;
@@ -201,6 +196,35 @@ body .MainSpects-container .MainSpects-characters div h2 {
 body .MainSpects-container .MainSpects-characters div p {
   font-size: 0.9rem;
   font-weight: lighter;
+}
+body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  color: #fff;
+  gap: 3rem;
+}
+body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item div {
+  width: 100%;
+}
+body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item div h3 {
+  font-size: 2rem;
+}
+body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item div p {
+  font-size: 1.5rem;
+}
+body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item img {
+  width: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails__loading {
+  flex-direction: row-reverse;
+}
+body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails__controls {
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 1150px) {
@@ -421,8 +445,6 @@ body .MainSpects-container .MainSpects-characters div p {
   body .MainSpects-container {
     width: 100%;
     height: 100%;
-    border: 1px solid red;
-    background-color: rgb(58, 179, 30);
     margin: 2.5rem auto;
   }
   body .MainSpects-container .MainSpects-characters {
@@ -437,15 +459,12 @@ body .MainSpects-container .MainSpects-characters div p {
     max-width: none;
     height: 100%;
     max-height: none;
-    border: 2px solid red;
   }
   body .MainSpects-container .MainSpects-characters div {
-    border: 2px solid red;
     width: 80%;
   }
   body .MainSpects-container .MainSpects-characters div img {
-    border: 2px solid red;
-    margin: 0 auto;
+    margin: 2.5rem auto 0.5rem auto;
   }
   body .MainSpects-container .MainSpects-characters div h2 {
     font-weight: 700;
@@ -454,6 +473,20 @@ body .MainSpects-container .MainSpects-characters div p {
   body .MainSpects-container .MainSpects-characters div p {
     font-size: 1.3rem;
     font-weight: lighter;
+  }
+  body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+  }
+  body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item div {
+    width: 60%;
+  }
+  body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item img {
+    width: 80%;
   }
 }
 @media (max-width: 600px) {
@@ -500,7 +533,6 @@ body .MainSpects-container .MainSpects-characters div p {
   body .MainSpects-container {
     width: 100%;
     height: 100%;
-    background-color: rgb(58, 179, 30);
     margin: 2.5rem auto;
   }
   body .MainSpects-container .MainSpects-characters {
@@ -516,15 +548,12 @@ body .MainSpects-container .MainSpects-characters div p {
     max-width: none;
     height: 100%;
     max-height: none;
-    border: 2px solid red;
   }
   body .MainSpects-container .MainSpects-characters div {
-    border: 2px solid red;
     width: 90%;
   }
   body .MainSpects-container .MainSpects-characters div img {
-    border: 2px solid red;
-    margin: 0 auto;
+    margin: 2.5rem auto 0.5rem auto;
   }
   body .MainSpects-container .MainSpects-characters div h2 {
     font-weight: 700;
@@ -533,5 +562,15 @@ body .MainSpects-container .MainSpects-characters div p {
   body .MainSpects-container .MainSpects-characters div p {
     font-size: 0.9rem;
     font-weight: lighter;
+  }
+  body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item div {
+    width: 80%;
+  }
+  body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item img {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
