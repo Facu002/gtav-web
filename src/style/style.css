@@ -229,7 +229,7 @@ body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetai
 body .MainSpects-container .MainSpects-gtaOnline {
   width: 90%;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 10% auto;
   display: flex;
   align-items: center;
 }
@@ -249,6 +249,36 @@ body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text img
 body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
   width: 50%;
   height: 50%;
+}
+body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item {
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  color: #fff;
+  gap: 3rem;
+}
+body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item div {
+  width: 100%;
+}
+body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item div h3 {
+  font-size: 2rem;
+}
+body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item div p {
+  font-size: 1.2rem;
+}
+body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item img {
+  width: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails__loading {
+  flex-direction: row;
+}
+body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails__controls {
+  flex-direction: row;
 }
 
 @media (max-width: 1150px) {
@@ -525,7 +555,7 @@ body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
   body .MainSpects-container .MainSpects-gtaOnline {
     width: 90%;
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 10% auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -546,6 +576,20 @@ body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
   body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
     width: 90%;
     height: 90%;
+  }
+  body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+  }
+  body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item div {
+    width: 60%;
+  }
+  body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item img {
+    width: 80%;
   }
 }
 @media (max-width: 600px) {
@@ -656,7 +700,6 @@ body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
   body .MainSpects-container .MainSpects-gtaOnline {
     width: 90%;
     max-width: 1500px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -683,5 +726,15 @@ body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
   body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
     width: 130%;
     height: 130%;
+  }
+  body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item div {
+    width: 80%;
+  }
+  body .MainSpects-container .MainSpects-onlineDetails .MainSpects-onlineDetails_item img {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */

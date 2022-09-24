@@ -10,6 +10,11 @@ import panoramic4 from '../media/panoramic_heli.jpg'
 import gtaOnlineLogo from '../media/gtaOnline.svg'
 import gtaOnline from '../media/online_pj.png'
 
+import panoramic5 from '../media/panoramic_tunning.jpg'
+import panoramic6 from '../media/custom_online_chr.jpg'
+import panoramic7 from '../media/new_menu.jpg'
+import panoramic8 from '../media/recent_gtaonline_dlc.jpg'
+
 function MainSpects() {
     return (
         <div className='MainSpects-container'>
@@ -65,6 +70,36 @@ function MainSpects() {
                     <p>Disfruta de nuevas mejoras para vehículos de alto rendimiento y la pantalla de selección profesiones. Además, podrás acceder a todas las actualizaciones, expansiones y contenidos de GTA Online publicados desde el lanzamiento, tanto en solitario como con tus amigos. Lleva a cabo elaborados golpes cooperativos, participa en carreras acrobáticas llenas de adrenalina, compite en modos Adversario especiales o pasa el tiempo en espacios sociales como clubes nocturnos, salones recreativos, fiestas en el ático, reuniones automovilísticas y mucho más.</p>
                 </div>
                 <img className='MainSpects-gtaOnline__img' src={gtaOnline} alt="gtaOnline" />
+            </div>
+            <div className="MainSpects-onlineDetails">
+                <div className="MainSpects-onlineDetails_item MainSpects-onlineDetails__graphics">
+                    <div>
+                        <h3>Gráficos impresionantes</h3>
+                        <p>Niveles de fidelidad y rendimiento mejorados, con nuevos modos de gráficos que ofrecen resoluciones de hasta 4K, 60 fotogramas por segundo, opciones HDR, trazado de rayos, mejoras en la calidad de las texturas y mucho más.</p>
+                    </div>
+                    <img src={panoramic5} alt="" />
+                </div>
+                <div className="MainSpects-onlineDetails_item MainSpects-onlineDetails__loading">
+                    <div>
+                        <h3>Carga más rápida</h3>
+                        <p>Entra en acción prácticamente al instante, ya que el mundo de Los Santos y el condado de Blaine ahora se carga más rápido que nunca.</p>
+                    </div>
+                    <img src={panoramic6} alt="" />
+                </div>
+                <div className="MainSpects-onlineDetails_item MainSpects-onlineDetails__audio">
+                    <div>
+                        <h3>Audio 3D</h3>
+                        <p>Oye los sonidos del mundo con una precisión milimétrica, desde la aceleración de un supercoche robado hasta los disparos de un tiroteo cercano, el estruendo de un helicóptero sobre tu cabeza y mucho más.</p>
+                    </div>
+                    <img src={panoramic7} alt="" />
+                </div>
+                <div className="MainSpects-onlineDetails_item MainSpects-onlineDetails__controls">
+                    <div>
+                        <h3>Controles inmersivos</h3>
+                        <p>Experimenta nuevos niveles de reacción con la respuesta háptica y la resistencia dinámica gracias a los gatillos adaptativos del mando inalámbrico DualSense de PlayStation®5: siente desde el daño direccional hasta los efectos atmosféricos, los baches de las carreteras, las explosiones y mucho más.</p>
+                    </div>
+                    <img src={panoramic8} alt="" />
+                </div>
             </div>
         </div>
     )
