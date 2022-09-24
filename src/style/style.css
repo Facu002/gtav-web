@@ -194,7 +194,7 @@ body .MainSpects-container .MainSpects-characters div h2 {
   margin: 0;
 }
 body .MainSpects-container .MainSpects-characters div p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: lighter;
 }
 body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item {
@@ -213,7 +213,7 @@ body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetai
   font-size: 2rem;
 }
 body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item div p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item img {
   width: 300px;
@@ -226,15 +226,41 @@ body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetai
 body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails__controls {
   flex-direction: row-reverse;
 }
+body .MainSpects-container .MainSpects-gtaOnline {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text {
+  color: #fff;
+  width: 50%;
+}
+body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text h3 {
+  font-size: 2.5rem;
+}
+body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text p {
+  font-size: 1.2rem;
+}
+body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text img {
+  width: 110px;
+}
+body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
+  width: 50%;
+  height: 50%;
+}
 
 @media (max-width: 1150px) {
   body .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: 1rem auto;
-    z-index: 3;
+  }
+  body .nav .nav-main-title {
+    margin-left: 10px;
   }
   body .nav .nav-sections {
     display: none;
@@ -288,6 +314,15 @@ body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetai
   body .nav .nav-mobile__menuHbr .open span:nth-child(3) {
     transform: translateY(-10px);
     background-color: transparent;
+  }
+  body .navOnMenuOpen {
+    width: 100%;
+    z-index: 5;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 1rem 0;
+    margin: 0 auto;
+    top: 0;
   }
   @-webkit-keyframes dropMenu {
     0% {
@@ -359,7 +394,6 @@ body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetai
             animation: dropMenu 1.5s;
     position: fixed;
     z-index: 5;
-    border-bottom: 2px solid greenyellow;
   }
   body .dropdown-menu .dropmenu-sections__btn {
     width: 95%;
@@ -488,6 +522,31 @@ body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetai
   body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item img {
     width: 80%;
   }
+  body .MainSpects-container .MainSpects-gtaOnline {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text {
+    color: #fff;
+    width: 70%;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text h3 {
+    font-size: 2.5rem;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text p {
+    font-size: 1.2rem;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text img {
+    width: 110px;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
+    width: 90%;
+    height: 90%;
+  }
 }
 @media (max-width: 600px) {
   body .nav .nav-main-title {
@@ -508,13 +567,34 @@ body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetai
   body .nav .nav-mobile__menuHbr {
     width: 30%;
   }
-  body .banner-container .bannerImg-background {
-    height: 70vh;
+  body .banner-container div .bannerImg-background {
+    height: 30vh;
   }
-  body .banner-container .bannerText-container {
+  body .banner-container div .bannerText-container {
     background: linear-gradient(0deg, rgb(0, 0, 0) 36%, rgba(0, 0, 0, 0) 100%);
   }
-  body .banner-container .bannerText-container .bannerText-container__btns {
+  body .banner-container div .bannerText-container .bannerText-container__logos {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__logos img {
+    width: 60px;
+    height: 60px;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__title {
+    width: 90%;
+    max-width: none;
+    text-align: center;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__title h1 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__title p {
+    font-size: 0.9rem;
+  }
+  body .banner-container div .bannerText-container .bannerText-container__btns {
     width: 100%;
     height: 150px;
     display: flex;
@@ -522,10 +602,10 @@ body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetai
     align-items: center;
     justify-content: space-evenly;
   }
-  body .banner-container .bannerText-container .bannerText-container__btns button {
+  body .banner-container div .bannerText-container .bannerText-container__btns button {
     width: 80vw;
   }
-  body .banner-container .bannerText-container .bannerText-container__btns button:hover {
+  body .banner-container div .bannerText-container .bannerText-container__btns button:hover {
     background-color: #fff;
     color: #000;
     transition: all 0.2s ease-in-out;
@@ -572,5 +652,36 @@ body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetai
   }
   body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item img {
     width: 90%;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text h3 {
+    font-size: 1.5rem;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__text img {
+    width: 80px;
+    margin: 0 auto;
+  }
+  body .MainSpects-container .MainSpects-gtaOnline .MainSpects-gtaOnline__img {
+    width: 130%;
+    height: 130%;
   }
 }/*# sourceMappingURL=style.css.map */

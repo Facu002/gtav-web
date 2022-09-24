@@ -10,7 +10,7 @@ function Nav() {
 
     return (
         <>
-        <nav className='nav'>
+        <nav className={isActive ? 'nav navOnMenuOpen' : 'nav'}>
             <div className="nav-main-title">
                 <img className='rockstar-logo' src={rockstar} alt="rockstar-logo" />
                 <img className='gtav-logo' src={title} alt="gtav-logo" />

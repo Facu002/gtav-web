@@ -7,6 +7,9 @@ import panoramic2 from '../media/panoramic_car.jpg'
 import panoramic3 from '../media/panoramic_guns.jpg'
 import panoramic4 from '../media/panoramic_heli.jpg'
 
+import gtaOnlineLogo from '../media/gtaOnline.svg'
+import gtaOnline from '../media/online_pj.png'
+
 function MainSpects() {
     return (
         <div className='MainSpects-container'>
@@ -53,6 +56,15 @@ function MainSpects() {
                     </div>
                     <img src={panoramic4} alt="" />
                 </div>
+            </div>
+            <div className="MainSpects-gtaOnline">
+                <div className="MainSpects-gtaOnline__text">
+                    <img src={gtaOnlineLogo} alt="gtaOnlineLogo" />
+                    <h3>Grand Theft Auto Online</h3>
+                    <p>Disfruta de la experiencia de GTA Online, un universo dinámico y en constante evolución para hasta 30 jugadores, donde podrás pasar de ser un estafador callejero a convertirte en el capo de tu propio imperio criminal.</p>
+                    <p>Disfruta de nuevas mejoras para vehículos de alto rendimiento y la pantalla de selección profesiones. Además, podrás acceder a todas las actualizaciones, expansiones y contenidos de GTA Online publicados desde el lanzamiento, tanto en solitario como con tus amigos. Lleva a cabo elaborados golpes cooperativos, participa en carreras acrobáticas llenas de adrenalina, compite en modos Adversario especiales o pasa el tiempo en espacios sociales como clubes nocturnos, salones recreativos, fiestas en el ático, reuniones automovilísticas y mucho más.</p>
+                </div>
+                <img className='MainSpects-gtaOnline__img' src={gtaOnline} alt="gtaOnline" />
             </div>
         </div>
     )
