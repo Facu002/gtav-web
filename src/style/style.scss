@@ -63,13 +63,13 @@ body{
                 color: #ffff;
                 border-radius: 5px;
                 cursor: pointer;
-                transition: all 0.2s ease-in-out;
+                transition: all ease-in 0.3s ease-in-out;
                 text-transform: uppercase;
                 font-weight: 800;
                 &:hover{
                     background-color: #fff;
                     color: #000;
-                    transition: all 0.2s ease-in-out;
+                    transition: all ease-in 0.3s ease-in-out;
                 }
             }
             a{
@@ -136,7 +136,6 @@ body{
                 }
             }
             .bannerText-container__btns{
-                // border: 2px solid green;
                 width: 450px;
                 display: flex;
                 justify-content: space-between;
@@ -148,13 +147,13 @@ body{
                     color: #ffff;
                     border-radius: 5px;
                     cursor: pointer;
-                    transition: all 0.2s ease-in-out;
+                    transition: all ease-in 0.3s ease-in-out;
                     text-transform: uppercase;
                     font-weight: 900;
                     &:hover{
                         background-color: #fff;
                         color: #000;
-                        transition: all 0.2s ease-in-out;
+                        transition: all ease-in 0.3s ease-in-out;
                     }
                 }
             }
@@ -290,7 +289,189 @@ body{
             }
         }
     }
+    .GamePurchase-container{
+        width: 90%;
+        margin: 0 auto;
+        h3{
+            color: #fff;
+        }
+        .Cards{
+            display: flex;
+            justify-content: space-evenly;
+            .GameCard-container{
+                border-radius: 5px;
+                border: 0.5px solid #777;
+                overflow: hidden;
+                width: 40vw;
+                max-width: 700px;
+                height: 80vh;
+                max-height: 900px;
+                min-height: 350px;
+                color: #fff;
+                background-position: top;
+                background: rgb(0,0,0);
+                background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%); 
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .GameCard-backgroundImg{
+                    z-index: -1;
+                    position: relative;
+                    top: 0;
+                }
+                .GameCard-gameThumbnail{
+                    width: 60%;
+                    min-width: 200px;
+                    max-width: 500px;
+                    margin: -35% auto 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 3;
+                }
+                .GameCard-text{
+                    width: 90%;
+                    margin: 0 auto;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    transition: all ease-in 0.3s;
     
+                    .GameCard-text__title{
+                        font-size: 1.5rem;
+                        margin: 0;
+                    }
+                    .GameCard-text__content{
+                        font-size: 0.8rem;
+                        justify-content: flex-start;
+                    }
+                    .GameCard-text__platforms{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        width: 100%;
+                        // img{
+                        //     border: 1px solid red;
+                        // }
+                    }
+                    .GameCard-text__info{
+                        width: 100%;
+                        border-radius: 5px;
+                        border: 1px solid #777;
+                        padding: 15px 10px;
+                        font-size: 18px;
+                        margin: 0 auto;
+                    }
+                }
+                .GameCard-text__hidden{
+                    // transition: all ease-in 0.3s;
+                    height: 10px;
+                    opacity: 0;
+                }
+                .GameCard__btn{
+                    margin: 1rem auto;
+                    width: 90%;
+                    height: 80px;
+                    background: transparent;
+                    border: 1px solid #ffff;
+                    color: #ffff;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    // transition: all ease-in 0.3s ease-in-out;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        font-size: 15px;
+                    }
+                    // &:hover{
+                    //     background-color: #fff;
+                    //     color: #000;
+                    //     // transition: all ease-in 0.3s ease-in-out;
+                    // }
+                    
+                }
+                // @keyframes selectPlatform {
+                //     0% {
+                //         opacity: 0;
+                //         // height: 0;
+                //         transition: all 2s;
+                //         .select-box button img{
+                //             width: 90px;
+                //             opacity: 0;
+                //         }
+                //     }
+                //     100% {
+                //         opacity: 0.5;
+                //         // height: auto;
+                //         transition: all 2s;
+                //         .select-box button img{
+                //             width: 90px;
+                //             opacity: 1;
+                //         }
+                //     }
+                // }
+                .GameCard__btn-select{
+                    height: 30%;
+                    position: relative;
+                    bottom: 0;
+                    border: 0.5px solid #777;
+                    cursor: default;
+                    background-color: #1A1A1A;
+                    .select-box{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        height: 50%;
+                        width: 90%;
+                        // animation:  selectPlatform 3s;
+                        button{
+                            width: 150px;
+                            height: 50px;
+                            background-color: #000;
+                            cursor: pointer;
+                            border: none;
+                            border-radius: 5px;
+                            img{
+                                width: 100px;
+                            }
+                            
+                        }
+                        .sony-btn{
+                            border: 1.5px solid #00439C;
+                            &:hover{
+                                background-color: #00439C;
+                            }
+                        }
+                        .microsoft-btn{
+                            border: 1.5px solid #387A26;
+                            &:hover{
+                            background-color: #387A26;
+                            }
+                        }
+                        .pc-btn{
+                            border: 1.5px solid #FCAF17;
+                            &:hover{
+                            background-color: #FCAF17;
+                        }
+                        }
+                        span{
+                            position: absolute;
+                            top: 10px;
+                            right: 20px;
+                            z-index: 3;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:1150px) {
@@ -344,7 +525,7 @@ body{
                         border-radius: 3px;
                         color: #fff;
                         background-color: #fff;
-                        transition: all 0.2s;
+                        transition: all ease-in 0.3s;
                     }
                     
                 }
@@ -423,10 +604,10 @@ body{
                 }
                 &:hover{
                     background-color: rgba(119, 119, 119, 0.178);
-                    transition: all 0.2s;
+                    transition: all ease-in 0.3s;
                     span{
                         color: rgb(214, 168, 28);
-                        transition: all 0.2s;
+                        transition: all ease-in 0.3s;
                     }
                 }
             }
@@ -478,7 +659,7 @@ body{
                             &:hover{
                                 background-color: #fff;
                                 color: #000;
-                                transition: all 0.2s ease-in-out;
+                                transition: all ease-in 0.3s ease-in-out;
                             }
                         }
                     }
@@ -489,6 +670,7 @@ body{
             width: 100%;
             height: 100%;
             margin: 2.5rem auto;
+
             .MainSpects-characters{
                 display: flex;
                 flex-direction: column;
@@ -576,6 +758,243 @@ body{
                 }
             }
         }
+        .GamePurchase-container{
+            .GamePurchase-text{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .GameCardBtn{
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+            .Cards{
+                .GameCard-container{
+                    width: 70vw;
+                    max-width: 350px;
+                    min-width: 200px;
+                    height: 100vh;
+                    max-height: 800px;
+                    min-height: 500px;
+                    position: relative;
+                    .GameCard-gameThumbnail{
+                        width: 10px;
+                        min-width: none;
+                        max-width: 500px;
+                        margin: -35% auto 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 3;
+                        position: absolute;
+                        top: 25%;
+                        right: 50%;
+                        transform: translateX(50%);
+                    }
+                    
+                    .GameCard-text, .GameCard-text__hidden{
+                        width: 90%;
+                        margin: 0 auto;
+                        margin: auto 0 0 5%;
+    
+                        height: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+            
+                        .GameCard-text__title{
+                            font-size: 18px;
+                            margin: 0;
+                        }
+                        .GameCard-text__content{
+                            font-size: 0.8rem;
+                        }
+                        .GameCard-text__platforms{
+                            display: grid;
+                            grid-template-columns: repeat(2, 110px);
+                            grid-row: auto;
+                            gap: 5px;
+                            justify-content: flex-start;
+                            width: 100%;
+                            img{
+                                height: 40px;
+                                width: 100%;
+                                max-width: 100px;
+                                min-width: 50px;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                &:last-child{
+                                    height: 25px;
+                                }
+                            }
+                        }
+                        .GameCard-text__info{
+                            width: 90%;
+                            border-radius: 5px;
+                            border: 1px solid #777;
+                            font-size: 11px;
+                            margin: 0 auto;
+                            padding: 10px;
+                            // font-size: 18px;
+                        }
+                    }
+                    .GameCard-text__hidden{
+                        // transition: all ease-in 0.1s;
+                        height: 10px;
+                        opacity: 0;
+                        color: #000;
+                    }
+                    .GameCard__btn-select{
+                        height: fit-content;
+                        position: relative;
+                        bottom: 0;
+                        top: auto;
+                        span{
+                            font-size: 15px;
+                        }
+                        .select-box{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 90%;
+                            width: 90%;
+                            // animation:  selectPlatform 3s;
+                            // background-color: #FCAF17;
+                            button{
+                                margin: 1rem 0;
+                                width: 80%;
+                                height: 50px;
+                                background-color: #000;
+                                cursor: pointer;
+                                border: none;
+                                border-radius: 5px;
+                                img{
+                                    width: 90px;
+                                }
+                            }
+                            .pc-btn{
+                                img{
+                                    width: 25px;
+                                }
+                            }
+                        }
+                    }
+        
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    body{
+        .GamePurchase-container{
+            overflow-x: hidden;
+            .GamePurchase-text{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .GameCardBtn{
+                    opacity: 1;
+                    height:fit-content;
+                    border-radius: 5px;
+                    overflow: hidden;
+
+                    div{
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        background-color: #000;
+
+                        svg{
+                            // border: 1px solid red;
+                            // margin: 0 auto;
+                            cursor: pointer;
+                            padding: 5px;
+
+                            &:hover{
+                                background-color: #777;
+                            }
+                        }
+                    }
+                }
+            }
+            .Cards{
+                width: 200%;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(400px, 100%));
+                justify-items: center;
+                align-items: center;
+                // gap: 100%;
+                // justify-content: space-between;
+                // align-items: center;
+                flex-shrink: 0%;
+                margin: 0 auto;
+
+                .GameCard-container{
+                    flex-shrink: 0;
+                    width: 100%;
+                    max-width: 400px;
+                    &:last-child{
+                        margin: 0;
+                    }
+                    .GameCard-text{
+                        margin: auto 0 0 10px;
+                    }
+                    .GameCard__btn{
+                        margin: 1rem auto;
+                        height: 40px;
+                        background: transparent;
+                        border: 1px solid #ffff;
+                        color: #ffff;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        // transition: all ease-in 0.3s ease-in-out;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        span{
+                            font-size: 12px;
+                        }
+                        
+                    }
+                    .GameCard__btn-select{
+                        height: fit-content;
+                        // transition: all ease-in 0.3s;
+                        position: relative;
+                        bottom: 0;
+                        top: auto;
+                        
+                        span{
+                            font-size: 11px;
+                        }
+                        .select-box{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                            width: 90%;
+                            button{
+                                margin: 1rem 0;
+                                width: 90%;
+                                height: 50px;
+                                background-color: #000;
+                                cursor: pointer;
+                                border: none;
+                                border-radius: 5px;
+                                // animation: selectPlatform 0.5s;
+                                img{
+                                    width: 90px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -641,7 +1060,7 @@ body{
                         &:hover{
                             background-color: #fff;
                             color: #000;
-                            transition: all 0.2s ease-in-out;
+                            transition: all ease-in 0.3s ease-in-out;
                         }
                     }
                 }
@@ -723,7 +1142,6 @@ body{
                     }
                 }
                 .MainSpects-gtaOnline__img{
-                    width: 130%;
                     height: 130%;
                 }
             }
@@ -736,6 +1154,126 @@ body{
                     }
                     img{
                         width:90% ;
+                    }
+                }
+            }
+        }
+        .GamePurchase-container{
+            overflow-x: hidden;
+
+            .GamePurchase-text{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .GameCardBtn{
+                    opacity: 1;
+                    height:fit-content;
+                    border-radius: 5px;
+                    overflow: hidden;
+
+                    div{
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        background-color: #000;
+
+                        svg{
+                            // border: 1px solid red;
+                            // margin: 0 auto;
+                            cursor: pointer;
+                            padding: 5px;
+
+                            &:hover{
+                                background-color: #777;
+                            }
+                        }
+                    }
+                }
+            }
+            .Cards{
+                // width: 100%;
+                // display: flex;
+                // justify-content: flex-start;
+                // align-items: center;
+                // flex-shrink: 0%;
+                // margin: 0 auto;
+
+                width: 200%;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(300px, 100%));
+                justify-items: center;
+                align-items: center;
+                // gap: 100%;
+                // justify-content: space-between;
+                // align-items: center;
+                flex-shrink: 0%;
+                margin: 0 auto;
+                // border: 1px solid rgb(255, 251, 0);
+
+                .GameCard-container{
+                    max-height: 800px;
+                    flex-shrink: 0;
+                    width: 100%;
+                    max-width: 90%;
+
+                    &:last-child{
+                        margin: 0;
+                    }
+                    .GameCard-text{
+                        margin: auto 0 0 10px;
+                    }
+                    .GameCard__btn{
+                        margin: 1rem auto;
+                        height: 40px;
+                        background: transparent;
+                        border: 1px solid #ffff;
+                        color: #ffff;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        // transition: all ease-in 0.3s ease-in-out;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        span{
+                            font-size: 12px;
+                        }
+                        // &:hover{
+                        //     background-color: #fff;
+                        //     color: #000;
+                        //     transition: all ease-in 0.3s ease-in-out;
+                        // }
+                        
+                    }
+                    .GameCard__btn-select{
+                        height: fit-content;
+                        // transition: all ease-in 0.3s;
+                        position: relative;
+                        bottom: 0;
+                        top: auto;
+                        
+                        span{
+                            font-size: 11px;
+                        }
+                        .select-box{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                            width: 90%;
+                            button{
+                                margin: 1rem 0;
+                                width: 90%;
+                                height: 50px;
+                                background-color: #000;
+                                cursor: pointer;
+                                border: none;
+                                border-radius: 5px;
+                                // animation: selectPlatform 0.5s;
+                                img{
+                                    width: 90px;
+                                }
+                            }
+                        }
                     }
                 }
             }
