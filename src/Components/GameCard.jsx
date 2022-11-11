@@ -35,7 +35,9 @@ function GameCard(props) {
                     </button>
                     <span onClick={toggleClass}>X</span>
                 </div>
-                : <div className="select-box">  </div>
+                : <div className="select-box">
+                    <></>
+                </div>
             }
         </div>
     </div>

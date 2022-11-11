@@ -385,6 +385,7 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select {
   border: 0.5px solid #777;
   cursor: default;
   background-color: #1A1A1A;
+  transition: height 2s;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box {
   display: flex;
@@ -392,6 +393,7 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
   justify-content: space-evenly;
   height: 50%;
   width: 90%;
+  transition: all ease-in 0.3s ease-in-out;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box button {
   width: 150px;
@@ -428,6 +430,10 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
   right: 20px;
   z-index: 3;
   cursor: pointer;
+}
+body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box-hidden {
+  height: 1px;
+  opacity: 0;
 }
 
 @media (max-width: 1150px) {
@@ -821,13 +827,19 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
     opacity: 0;
     color: #000;
   }
+  body .GamePurchase-container .Cards .GameCard-container .GameCard__btn {
+    transition: all ease-in 3s ease-in-out;
+  }
+  body .GamePurchase-container .Cards .GameCard-container .GameCard__btn .select-box {
+    height: 1px;
+    transition: all ease-in 3s ease-in-out;
+  }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 30%;
     position: relative;
     bottom: 0;
     top: auto;
+    transition: all ease-in 0.2s;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select span {
     font-size: 15px;
@@ -839,6 +851,7 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
     justify-content: center;
     height: 90%;
     width: 90%;
+    transition: all ease-in 0.4s;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box button {
     margin: 1rem 0;
@@ -854,6 +867,9 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box .pc-btn img {
     width: 25px;
+  }
+  body .GamePurchase-container .Cards .GameCard-container:last-child .GameCard__btn-select {
+    height: 60%;
   }
 }
 @media (max-width: 800px) {
@@ -872,6 +888,7 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
     height: fit-content;
     border-radius: 5px;
     overflow: hidden;
+    pointer-events: all;
   }
   body .GamePurchase-container .GamePurchase-text .GameCardBtn div {
     display: flex;
@@ -914,6 +931,7 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: height 0.2s;
     text-transform: uppercase;
     font-weight: 900;
   }
@@ -921,12 +939,11 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
     font-size: 12px;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 50%;
     position: relative;
     bottom: 0;
     top: auto;
+    transition: all 0.4s;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select span {
     font-size: 11px;
@@ -1139,8 +1156,6 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
     flex-shrink: 0;
     width: 100%;
     max-width: 90%;
-  }
-  body .GamePurchase-container .Cards .GameCard-container:last-child {
     margin: 0;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard-text {
@@ -1156,17 +1171,17 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 900;
+    transition: height 0.2s;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn span {
     font-size: 12px;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 30%;
     position: relative;
     bottom: 0;
     top: auto;
+    transition: all 0.4s;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select span {
     font-size: 11px;
@@ -1190,5 +1205,8 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box button img {
     width: 90px;
+  }
+  body .GamePurchase-container .Cards .GameCard-container:last-child .GameCard__btn-select {
+    height: 60%;
   }
 }/*# sourceMappingURL=style.css.map */
