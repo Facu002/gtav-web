@@ -34,7 +34,7 @@ function Home() {
             <GameCard2
                 backgroundImage={gtavBackground}
                 thumbImg={gtaVThumb}
-                cardTitle={'Grand Theft V'}
+                cardTitle={'Grand Theft Auto V'}
                 gameContent={['Incluye el  ', <b>modo Individual de GTA V</b>,' y ',<b>GTA Online</b>]}
             />
 

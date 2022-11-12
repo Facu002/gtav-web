@@ -284,8 +284,13 @@ body .GamePurchase-container {
   width: 90%;
   margin: 0 auto;
 }
-body .GamePurchase-container h3 {
+body .GamePurchase-container .GamePurchase-text h3 {
   color: #fff;
+  font-size: 2rem;
+}
+body .GamePurchase-container .GamePurchase-text .GameCardBtn {
+  pointer-events: none;
+  display: none;
 }
 body .GamePurchase-container .Cards {
   display: flex;
@@ -297,8 +302,8 @@ body .GamePurchase-container .Cards .GameCard-container {
   overflow: hidden;
   width: 40vw;
   max-width: 700px;
-  height: 80vh;
-  max-height: 900px;
+  height: 100vh;
+  max-height: 1200px;
   min-height: 350px;
   color: #fff;
   background-position: top;
@@ -307,6 +312,13 @@ body .GamePurchase-container .Cards .GameCard-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+body .GamePurchase-container .Cards .GameCard-container:last-child .GameCard__btn-select {
+  height: 50%;
+}
+body .GamePurchase-container .Cards .GameCard-container:last-child .GameCard__btn-select .pc-btn img {
+  width: 25px;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-backgroundImg {
   z-index: -1;
@@ -315,25 +327,30 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard-backgroundImg 
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-gameThumbnail {
   width: 60%;
-  min-width: 200px;
+  min-width: none;
   max-width: 500px;
   margin: -35% auto 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 3;
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform: translateX(50%);
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-text {
   width: 90%;
   margin: 0 auto;
-  height: 50%;
+  height: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   transition: all ease-in 0.3s;
+  border: 1px solid red;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard-text__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard-text__content {
@@ -341,18 +358,34 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard
   justify-content: flex-start;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard-text__platforms {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-row: auto;
+  gap: 10px;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-evenly;
   width: 100%;
+  border: 1px solid red;
+}
+body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard-text__platforms img {
+  height: 40px;
+  width: 100%;
+  max-width: 110px;
+  min-width: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard-text__platforms img:last-child {
+  height: 25px;
+  justify-self: flex-start;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard-text__info {
-  width: 100%;
+  width: 90%;
   border-radius: 5px;
   border: 1px solid #777;
   padding: 15px 10px;
   font-size: 18px;
-  margin: 0 auto;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-text__hidden {
   height: 10px;
@@ -367,6 +400,7 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn {
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  transition: height 0.2s;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 18px;
@@ -385,18 +419,21 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select {
   border: 0.5px solid #777;
   cursor: default;
   background-color: #1A1A1A;
-  transition: height 2s;
+  transition: height 0.4s;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 50%;
+  height: 80%;
   width: 90%;
   transition: all ease-in 0.3s ease-in-out;
+  border: 1px solid red;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box button {
-  width: 150px;
+  width: 90%;
+  max-width: 400px;
   height: 50px;
   background-color: #000;
   cursor: pointer;
