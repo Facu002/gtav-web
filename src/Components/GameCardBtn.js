@@ -21,7 +21,7 @@ function GameCardBtn() {
         // if (window.screen.width <= 1000) {
         //     cardsBtn.style.display = 'none'
         // }
-        if (window.screen.width <= 800) {
+        if (window.screen.width <= 870) {
             cards.style.transform = 'translateX(-50%)'
             cards.style.transition = 'all 0.8s'
         }

@@ -1,7 +1,8 @@
 import {React, useState} from 'react'
-import title from '../media/title.png'
+import {NavLink} from 'react-router-dom'
+
 import rockstar from '../media/rockstar-logo.svg'
-function Nav() {
+function Nav(props) {
     const [isActive, setActive] = useState(false);
     
     const toggleClass = () => {
@@ -13,19 +14,19 @@ function Nav() {
         <nav className={isActive ? 'nav navOnMenuOpen' : 'nav'}>
             <div className="nav-main-title">
                 <img className='rockstar-logo' src={rockstar} alt="rockstar-logo" />
-                <img className='gtav-logo' src={title} alt="gtav-logo" />
+                <img className='gtav-logo' src={props.titleLogo} alt="gtav-logo" />
             </div>
             <div className="nav-sections">
-                <a className='nav-sections__btn' href="#">Información General</a>
-                <a className='nav-sections__btn' href="#">GTA Online</a>
-                <a className='nav-sections__btn' href="#">GTA+</a>
-                <a className='nav-sections__btn' href="#">Guías</a>
-                <a className='nav-sections__btn' href="#">Asistencia Técnica</a>
+                <NavLink to="/" className='nav-sections__btn' href="#">Información General</NavLink>
+                <NavLink to="/online" className='nav-sections__btn' href="#">GTA Online</NavLink>
+                <NavLink className='nav-sections__btn' href="#">GTA+</NavLink>
+                <NavLink className='nav-sections__btn' href="#">Guías</NavLink>
+                <NavLink className='nav-sections__btn' href="#">Asistencia Técnica</NavLink>
             </div>
             <div className="nav-account">
                 <button>Comprar ahora</button>
                 <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <circle cx="12" cy="7" r="4" />
                     <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
@@ -35,7 +36,7 @@ function Nav() {
             <div className="nav-mobile__menuHbr">
                 <div className="nav-mobile__account">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="12" cy="7" r="4" />
                         <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
@@ -50,11 +51,11 @@ function Nav() {
             </div>
         </nav>
         <div className={isActive ? "dropdown-menu" : "dropdown-menu__closed"}>
-            <a className='dropmenu-sections__btn' href="#"><span>Información General</span></a>
-            <a className='dropmenu-sections__btn' href="#"><span>GTA Online</span></a>
-            <a className='dropmenu-sections__btn' href="#"><span>GTA+</span></a>
-            <a className='dropmenu-sections__btn' href="#"><span>Guías</span></a>
-            <a className='dropmenu-sections__btn' href="#"><span>Asistencia Técnica</span></a>
+            <NavLink to="/" className='dropmenu-sections__btn' href="#"><span>Información General</span></NavLink>
+            <NavLink to="/online" className='dropmenu-sections__btn' href="#"><span>GTA Online</span></NavLink>
+            <NavLink className='dropmenu-sections__btn' href="#"><span>GTA+</span></NavLink>
+            <NavLink className='dropmenu-sections__btn' href="#"><span>Guías</span></NavLink>
+            <NavLink className='dropmenu-sections__btn' href="#"><span>Asistencia Técnica</span></NavLink>
         </div>
         </>
 
