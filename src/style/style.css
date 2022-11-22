@@ -729,6 +729,89 @@ body .RolesSlider-container .RolesCards-container .RolesCard-container .bg .titl
   left: 20px;
   color: white;
 }
+body .RolesSlider-container .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .RolesSlider-container .modal .modal-content {
+  height: 90vh;
+  width: 95vw;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+body .RolesSlider-container .modal .modal-content .left {
+  width: 55%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .RolesSlider-container .modal .modal-content .left .container-promo {
+  width: 100%;
+  height: 98%;
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+body .RolesSlider-container .modal .modal-content .left .promo {
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+body .RolesSlider-container .modal .modal-content .right {
+  width: 45%;
+  height: 98%;
+  background-color: rgb(172, 172, 172);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+body .RolesSlider-container .modal .modal-content .right button {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+body .RolesSlider-container .modal .modal-content .right .container-text {
+  height: 80%;
+  width: 80%;
+  border: 1px solid red;
+}
+body .RolesSlider-container .modal .modal-content .right .container-text div {
+  margin: 1rem;
+}
+body .RolesSlider-container .modal .modal-content .right .container-text div span {
+  font-size: 1.5rem;
+}
+body .RolesSlider-container .modal .modal-content .right .container-text div h3 {
+  font-size: 2.5rem;
+}
+body .RolesSlider-container .modal .modal-content .right .container-text div p {
+  font-size: 1.5rem;
+}
 body .StrikeSlider-container {
   margin: 1rem auto;
   width: 100vw;

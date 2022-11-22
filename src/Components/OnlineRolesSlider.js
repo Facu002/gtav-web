@@ -1,4 +1,5 @@
-import React from 'react'
+import {React} from 'react'
+
 import OnlineRolesCard from './OnlineRolesCard'
 
 import OnlineActivityMoneyPromo from '../media/OnlineActivity-money.png'
@@ -14,6 +15,7 @@ import OnlineActivityNightPromo from '../media/OnlineActivity-night.png'
 import OnlineActivityNightBackground from '../media/OnlineActivity-night-background.jpg'
 
 function OnlineRolesSlider() {
+
     function nextButton() {
         // const slideWidth = slide.width;
         let sliderContainer = document.querySelector('.RolesCards-container');
@@ -30,7 +32,7 @@ function OnlineRolesSlider() {
             sliderContainer.scrollLeft -= 100;
         }
     }
-
+    
     return (
     <div className='RolesSlider-container'>
         <div className='slider-text-container'>
@@ -65,21 +67,30 @@ function OnlineRolesSlider() {
         <OnlineRolesCard
         title={'Altas Esferas'}
         promo={OnlineActivityMoneyPromo}
-        bg={`url(${OnlineActivityMoneyBackground})`}/>
+        bg={`url(${OnlineActivityMoneyBackground})`}
+        info={'Dirige un imperio criminal gigantesco. Contrata a otros jugadores como escoltas y financia tu opulento estilo de vida comerciando con contrabando.'}
+        />
 
         <OnlineRolesCard
         title={'Sobre dos Ruedas'}
         promo={OnlineActivityVehiclesPromo}
-        bg={`url(${OnlineActivityVehiclesBackground})`}/>
+        bg={`url(${OnlineActivityVehiclesBackground})`}
+        info={'Crea un club de moteros con hasta 7 miembros más. Personaliza la sede, lleva a cabo contratos, dirige negocios ilícitos y compite con clubes rivales para dominar las calles.'}
+        />
 
         <OnlineRolesCard
         title={'Traficantes de armas'}
         promo={OnlineActivityFirearmsPromo}
-        bg={`url(${OnlineActivityFirearmsBackground})`}/>
+        bg={`url(${OnlineActivityFirearmsBackground})`}
+        info={'Domina el mercado del tráfico ilegal de armas del sur de San Andreas en Tráfico de armas. Inicia tu prolífica carrera como traficante de armas con la compra de un búnker en Maze Bank Foreclosures. Estas fortalezas subterráneas serán tu base de operaciones para todas las actividades de tráfico de armas y dispondrán de un terminal informático para que puedas conectarte a la red de Disruption Logistics.'}
+        />
         <OnlineRolesCard
         title={'Vida nocturna'}
         promo={OnlineActivityNightPromo}
-        bg={`url(${OnlineActivityNightBackground})`}/>
+        bg={`url(${OnlineActivityNightBackground})`}
+        info={'Abre un club nocturno y conviértelo en el lugar de fiesta favorito de la ciudad para utilizarlo como fachada para gestionar otros negocios más turbios. Ideal si quieres expandir tu emporio en el futuro.'}
+        />
+        
 
     </div>
 
