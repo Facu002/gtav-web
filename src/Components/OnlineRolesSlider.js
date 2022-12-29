@@ -69,6 +69,7 @@ function OnlineRolesSlider() {
         promo={OnlineActivityMoneyPromo}
         bg={`url(${OnlineActivityMoneyBackground})`}
         info={'Dirige un imperio criminal gigantesco. Contrata a otros jugadores como escoltas y financia tu opulento estilo de vida comerciando con contrabando.'}
+        learnMore={'the Gunrunner Guide here'}
         />
 
         <OnlineRolesCard
@@ -76,6 +77,7 @@ function OnlineRolesSlider() {
         promo={OnlineActivityVehiclesPromo}
         bg={`url(${OnlineActivityVehiclesBackground})`}
         info={'Crea un club de moteros con hasta 7 miembros más. Personaliza la sede, lleva a cabo contratos, dirige negocios ilícitos y compite con clubes rivales para dominar las calles.'}
+        learnMore={'our Biker Guide'}
         />
 
         <OnlineRolesCard
@@ -83,12 +85,15 @@ function OnlineRolesSlider() {
         promo={OnlineActivityFirearmsPromo}
         bg={`url(${OnlineActivityFirearmsBackground})`}
         info={'Domina el mercado del tráfico ilegal de armas del sur de San Andreas en Tráfico de armas. Inicia tu prolífica carrera como traficante de armas con la compra de un búnker en Maze Bank Foreclosures. Estas fortalezas subterráneas serán tu base de operaciones para todas las actividades de tráfico de armas y dispondrán de un terminal informático para que puedas conectarte a la red de Disruption Logistics.'}
+        learnMore={'the Gunrunner Guide here'}
         />
+
         <OnlineRolesCard
         title={'Vida nocturna'}
         promo={OnlineActivityNightPromo}
         bg={`url(${OnlineActivityNightBackground})`}
         info={'Abre un club nocturno y conviértelo en el lugar de fiesta favorito de la ciudad para utilizarlo como fachada para gestionar otros negocios más turbios. Ideal si quieres expandir tu emporio en el futuro.'}
+        learnMore={'the Nightclub Owner Guide'}
         />
         
 

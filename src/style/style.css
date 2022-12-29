@@ -1,4 +1,5 @@
 body {
+  font-family: "Heebo", sans-serif;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -193,7 +194,7 @@ body .MainSpects-container .MainSpects-characters {
   width: 80vw;
   height: 70vh;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 5rem auto 1rem auto;
 }
 body .MainSpects-container .MainSpects-characters .MainSpects-characters__img {
   width: 100%;
@@ -220,6 +221,9 @@ body .MainSpects-container .MainSpects-characters div h2 {
 body .MainSpects-container .MainSpects-characters div p {
   font-size: 1.2rem;
   font-weight: lighter;
+}
+body .MainSpects-container .MainSpects-gameplayDetails {
+  margin-top: 2rem;
 }
 body .MainSpects-container .MainSpects-gameplayDetails .MainSpects-gameplayDetails_item {
   display: flex;
@@ -371,7 +375,6 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard-text {
   flex-direction: column;
   justify-content: space-around;
   transition: all ease-in 0.3s;
-  border: 1px solid red;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard-text__title {
   font-size: 2rem;
@@ -389,7 +392,6 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  border: 1px solid red;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard-text .GameCard-text__platforms img {
   height: 40px;
@@ -453,7 +455,6 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
   height: 80%;
   width: 90%;
   transition: all ease-in 0.3s ease-in-out;
-  border: 1px solid red;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box button {
   width: 90%;
@@ -471,7 +472,7 @@ body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .s
   border: 1.5px solid #00439C;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box .sony-btn:hover {
-  background-color: #00439C;
+  background-color: #00439c;
 }
 body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box .microsoft-btn {
   border: 1.5px solid #387A26;
@@ -504,6 +505,7 @@ body .DlcSlider-container {
 body .DlcSlider-container .slider-text-container {
   display: flex;
   justify-content: space-between;
+  margin: 0 1.5rem;
 }
 body .DlcSlider-container .slider-text-container h4 {
   color: #fff;
@@ -610,6 +612,685 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container .title {
   bottom: 50px;
   left: 50px;
   color: white;
+}
+body .DlcSlider-container .DlcCard-container-Modal {
+  background-color: rgba(0, 0, 0, 0.904);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101%;
+  height: 100%;
+  z-index: 10;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap {
+  border-radius: 20px;
+  border: 1px solid #777;
+  width: 95vw;
+  height: 95vh;
+  max-width: 1200px;
+  overflow: hidden;
+  background-color: #000;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  -ms-overflow-style: 10px;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container::-webkit-scrollbar {
+  display: none;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .close-btn {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #777;
+  background-color: rgba(26, 26, 26, 0.662745098);
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+  z-index: 20;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .close-btn:hover, body .DlcSlider-container .DlcCard-container-Modal .wrap .container .close-btn:active {
+  transition: all 0.3s;
+  color: #000;
+  background-color: #fff;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner {
+  width: 100%;
+  height: 60%;
+  min-height: 500px;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner .logo {
+  width: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container {
+  width: 100%;
+  height: 90%;
+  max-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: top;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid #777;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container {
+  height: 120%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: none;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container .promo {
+  width: 100%;
+  height: 135%;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text {
+  height: 100%;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container {
+  width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2rem auto;
+  color: white;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container img {
+  width: 100%;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container h4 {
+  font-size: 2.5rem;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container p, body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container span, body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container ul {
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: flex;
+  width: 100%;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container .glider-img {
+  flex-shrink: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scroll-snap-align: center;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper {
+  height: 500px;
+  width: 120%;
+  position: relative;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2rem auto;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
+  width: 100%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper .swiperSlide-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  /* Center slide text vertically */
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  background-color: white;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  background-color: white;
+}
+body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  background-color: white;
+}
+body .caca {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+body .caca .swiper {
+  height: 60vh;
+  width: 100%;
+  overflow: visible;
+}
+body .caca .swiper .DlcCards-container {
+  height: 60vh;
+  width: 700px;
+  display: flex;
+  align-items: flex-end;
+  overflow-x: scroll;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  list-style: none;
+  padding: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body .caca .swiper .DlcCards-container::-webkit-scrollbar {
+  display: none;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container {
+  border: 1px solid rgb(255, 255, 0);
+  width: 100%;
+  max-width: 700px;
+  height: 90%;
+  max-height: 900px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-position: center;
+  background-size: cover;
+  margin: 0 1.5rem 0 0;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container:hover {
+  box-shadow: inset 0px 0px 0px 1px #fff;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container:hover .promo-container .promo {
+  transition: all 0.9s;
+  left: -10px;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container .logo {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 5;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container .promo-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container .promo-container .promo-bg {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.599137931) 53%, rgba(0, 0, 0, 0) 100%);
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container .promo-container .promo {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  height: 105%;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container .title {
+  font-size: 2rem;
+  font-weight: 800;
+  z-index: 5;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal {
+  background-color: rgba(0, 0, 0, 0.904);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  width: 101%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap {
+  border-radius: 20px;
+  border: 1px solid #777;
+  width: 95vw;
+  height: 95vh;
+  max-width: 1200px;
+  overflow: hidden;
+  background-color: #000;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  -ms-overflow-style: 10px;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container::-webkit-scrollbar {
+  display: none;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .close-btn {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #777;
+  background-color: rgba(26, 26, 26, 0.662745098);
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+  z-index: 20;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .close-btn:hover, body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .close-btn:active {
+  transition: all 0.3s;
+  color: #000;
+  background-color: #fff;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner {
+  width: 100%;
+  height: 60%;
+  min-height: 500px;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner .logo {
+  width: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container {
+  width: 100%;
+  height: 90%;
+  max-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: top;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid #777;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container {
+  height: 120%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: none;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container .promo {
+  width: 100%;
+  height: 135%;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text {
+  height: 100%;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container {
+  width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2rem auto;
+  color: white;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container img {
+  width: 100%;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container h4 {
+  font-size: 2.5rem;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container p, body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container span, body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container ul {
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: flex;
+  width: 100%;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container .glider-img {
+  flex-shrink: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scroll-snap-align: center;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper {
+  height: 500px;
+  width: 120%;
+  position: relative;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2rem auto;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
+  width: 100%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper .swiperSlide-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  background-color: white;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  background-color: white;
+}
+body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  background-color: white;
+}
+body .caca .btn-container {
+  align-self: flex-end;
+  right: 0;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #9c8f00;
+}
+body .caca .btn-container .swiper-button-next,
+body .caca .btn-container .swiper-button-prev {
+  position: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+body .caca .DlcCard-container-Modal {
+  background-color: rgba(0, 0, 0, 0.904);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  width: 101%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .caca .DlcCard-container-Modal .wrap {
+  border-radius: 20px;
+  border: 1px solid #777;
+  width: 95vw;
+  height: 95vh;
+  max-width: 1200px;
+  overflow: hidden;
+  background-color: #000;
+}
+body .caca .DlcCard-container-Modal .wrap .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  -ms-overflow-style: 10px;
+}
+body .caca .DlcCard-container-Modal .wrap .container::-webkit-scrollbar {
+  display: none;
+}
+body .caca .DlcCard-container-Modal .wrap .container .close-btn {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #777;
+  background-color: rgba(26, 26, 26, 0.662745098);
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+  z-index: 20;
+}
+body .caca .DlcCard-container-Modal .wrap .container .close-btn:hover, body .caca .DlcCard-container-Modal .wrap .container .close-btn:active {
+  transition: all 0.3s;
+  color: #000;
+  background-color: #fff;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-banner {
+  width: 100%;
+  height: 60%;
+  min-height: 500px;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-banner .logo {
+  width: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-banner .promo-container {
+  width: 100%;
+  height: 90%;
+  max-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: top;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid #777;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container {
+  height: 120%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: none;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container .promo {
+  width: 100%;
+  height: 135%;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text {
+  height: 100%;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container {
+  width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2rem auto;
+  color: white;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container img {
+  width: 100%;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container h4 {
+  font-size: 2.5rem;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container p, body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container span, body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container ul {
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: flex;
+  width: 100%;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container .glider-img {
+  flex-shrink: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scroll-snap-align: center;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper {
+  height: 500px;
+  width: 120%;
+  position: relative;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2rem auto;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
+  width: 100%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper .swiperSlide-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  background-color: white;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  background-color: white;
+}
+body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  background-color: white;
 }
 body .RolesSlider-container {
   margin: 1rem auto;
@@ -735,7 +1416,7 @@ body .RolesSlider-container .modal {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  width: 100vw;
+  width: 101vw;
   height: 100vh;
   margin: 0 auto;
   border-radius: 10px;
@@ -743,6 +1424,7 @@ body .RolesSlider-container .modal {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.904);
 }
 body .RolesSlider-container .modal .modal-content {
   height: 90vh;
@@ -760,6 +1442,7 @@ body .RolesSlider-container .modal .modal-content .left {
   align-items: flex-end;
   border-radius: 10px;
   overflow: hidden;
+  z-index: 10;
 }
 body .RolesSlider-container .modal .modal-content .left .container-promo {
   width: 100%;
@@ -779,26 +1462,44 @@ body .RolesSlider-container .modal .modal-content .left .promo {
 body .RolesSlider-container .modal .modal-content .right {
   width: 45%;
   height: 98%;
-  background-color: rgb(172, 172, 172);
+  background-color: #1A1A1A;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  color: #fff;
 }
-body .RolesSlider-container .modal .modal-content .right button {
+body .RolesSlider-container .modal .modal-content .right .close-btn {
   position: absolute;
   right: 1%;
   top: 1%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 100px;
+  border: 1px solid #777;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+}
+body .RolesSlider-container .modal .modal-content .right .close-btn:hover, body .RolesSlider-container .modal .modal-content .right .close-btn:active {
+  transition: all 0.3s;
+  color: #000;
+  background-color: #fff;
 }
 body .RolesSlider-container .modal .modal-content .right .container-text {
   height: 80%;
   width: 80%;
-  border: 1px solid red;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #777 #1a1a1a;
+  -ms-overflow-style: 10px;
+}
+body .RolesSlider-container .modal .modal-content .right .container-text::-webkit-scrollbar {
+  display: none;
 }
 body .RolesSlider-container .modal .modal-content .right .container-text div {
   margin: 1rem;
@@ -810,7 +1511,30 @@ body .RolesSlider-container .modal .modal-content .right .container-text div h3 
   font-size: 2.5rem;
 }
 body .RolesSlider-container .modal .modal-content .right .container-text div p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+body .RolesSlider-container .modal .modal-content .right .container-text div .learnMoreBox {
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 2rem;
+}
+body .RolesSlider-container .modal .modal-content .right .container-text div .learnMoreBox span {
+  font-size: 1rem;
+  width: 70%;
+}
+body .RolesSlider-container .modal .modal-content .right .container-text div .learnMoreBox a {
+  margin-top: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
 body .StrikeSlider-container {
   margin: 1rem auto;
@@ -927,6 +1651,108 @@ body .StrikeSlider-container .StrikeCards-container .StrikeCard-container .bg .p
   width: 120%;
   cursor: pointer;
   transition: all 0.3s;
+}
+body .StrikeSlider-container .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 101vw;
+  height: 100vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.904);
+}
+body .StrikeSlider-container .modal .modal-content {
+  height: 90vh;
+  width: 95vw;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+body .StrikeSlider-container .modal .modal-content .left {
+  width: 55%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 10;
+}
+body .StrikeSlider-container .modal .modal-content .left .container-promo {
+  width: 100%;
+  height: 98%;
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+body .StrikeSlider-container .modal .modal-content .left .promo {
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+body .StrikeSlider-container .modal .modal-content .right {
+  width: 45%;
+  height: 98%;
+  background-color: #1A1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+body .StrikeSlider-container .modal .modal-content .right .close-btn {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #777;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+}
+body .StrikeSlider-container .modal .modal-content .right .close-btn:hover, body .StrikeSlider-container .modal .modal-content .right .close-btn:active {
+  transition: all 0.3s;
+  color: #000;
+  background-color: #fff;
+}
+body .StrikeSlider-container .modal .modal-content .right .container-text {
+  height: 80%;
+  width: 90%;
+  color: #fff;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  -ms-overflow-style: 10px;
+  scrollbar-color: #777 #1a1a1a;
+}
+body .StrikeSlider-container .modal .modal-content .right .container-text::-webkit-scrollbar {
+  display: none;
+}
+body .StrikeSlider-container .modal .modal-content .right .container-text div {
+  margin: 1rem;
+}
+body .StrikeSlider-container .modal .modal-content .right .container-text div span {
+  font-size: 1.5rem;
+}
+body .StrikeSlider-container .modal .modal-content .right .container-text div h3 {
+  font-size: 2.5rem;
+}
+body .StrikeSlider-container .modal .modal-content .right .container-text div p {
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1150px) {
@@ -1068,8 +1894,8 @@ body .StrikeSlider-container .StrikeCards-container .StrikeCard-container .bg .p
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     height: 100vh;
-    -webkit-animation: dropMenu 1.5s;
-            animation: dropMenu 1.5s;
+    -webkit-animation: dropMenu 0.5s;
+            animation: dropMenu 0.5s;
     position: fixed;
     z-index: 5;
   }
@@ -1078,12 +1904,12 @@ body .StrikeSlider-container .StrikeCards-container .StrikeCard-container .bg .p
     text-align: left;
     padding: 1rem 0 1rem 5%;
     text-decoration: none;
-    -webkit-animation: appearSections 1.5s;
-            animation: appearSections 1.5s;
+    -webkit-animation: appearSections 0.5s;
+            animation: appearSections 0.5s;
   }
   body .dropdown-menu .dropmenu-sections__btn span {
-    -webkit-animation: appearSections 1.5s;
-            animation: appearSections 1.5s;
+    -webkit-animation: appearSections 0.5s;
+            animation: appearSections 0.5s;
     font-weight: 800;
     font-size: 24px;
     color: #fff;
@@ -1199,7 +2025,6 @@ body .StrikeSlider-container .StrikeCards-container .StrikeCard-container .bg .p
     margin: 0 1rem 0 0;
   }
   body .banner-container__online .bannerText-container .bannerText-container__title {
-    border: 2px solid green;
     color: #fff;
     width: 80%;
     max-width: 780px;
@@ -1645,7 +2470,6 @@ body .StrikeSlider-container .StrikeCards-container .StrikeCard-container .bg .p
     margin: 0 1rem 0 0;
   }
   body .banner-container__online .bannerText-container .bannerText-container__title {
-    border: 2px solid green;
     color: #fff;
     width: 80%;
     max-width: 780px;
@@ -1655,7 +2479,7 @@ body .StrikeSlider-container .StrikeCards-container .StrikeCard-container .bg .p
     font-weight: 800;
   }
   body .banner-container__online .bannerText-container .bannerText-container__title p {
-    font-size: 1 rem;
+    font-size: 1rem;
   }
   body .GamePurchase-container {
     overflow-x: hidden;
@@ -1766,6 +2590,7 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb {
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
+    width: 90vw;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container:hover,
 body .DlcSlider-container .DlcCards-container .DlcCard-container--mb:hover {
@@ -1860,9 +2685,10 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     transition: all 0.6s;
   }
   body .RolesSlider-container .RolesCards-container .RolesCard-container {
-    height: 70vw;
-    width: 70vw;
-    border: 1px solid yellow;
+    height: 90vw;
+    width: 90vw;
+    max-width: 600px;
+    max-height: 600px;
     margin: 0 10px;
   }
   body .RolesSlider-container .RolesCards-container .RolesCard-container:first-child {
@@ -1870,6 +2696,99 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
   }
   body .RolesSlider-container .RolesCards-container .RolesCard-container:last-child {
     margin-right: 1.5rem;
+  }
+  body .RolesSlider-container .RolesCards-container .modal {
+    height: 100%;
+    border-radius: 0;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content {
+    overflow: scroll;
+    height: 90vh;
+    display: block;
+    width: 90%;
+    border-radius: 0;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .left {
+    width: 100%;
+    height: 60vh;
+    max-height: 700px;
+    opacity: 0.1;
+    border-radius: 15px;
+    border-radius: 0;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .left .container-promo {
+    height: 100%;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right .container-text {
+    overflow: visible;
+    height: 100%;
+  }
+  body .StrikeSlider-container {
+    margin: 10rem auto;
+    width: 100vw;
+    max-width: 1500px;
+    overflow: hidden;
+  }
+  body .StrikeSlider-container .StrikeCards-container .StrikeCard-container {
+    height: 90vw;
+    width: 90vw;
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 10px;
+  }
+  body .StrikeSlider-container .StrikeCards-container .StrikeCard-container:first-child {
+    margin-left: 1.5rem;
+  }
+  body .StrikeSlider-container .StrikeCards-container .StrikeCard-container:last-child {
+    margin-right: 1.5rem;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal {
+    height: 100%;
+    border-radius: 0;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content {
+    overflow: scroll;
+    height: 90vh;
+    display: block;
+    width: 90%;
+    border-radius: 0;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .left {
+    width: 100%;
+    height: 60vh;
+    max-height: 700px;
+    opacity: 0.1;
+    border-radius: 15px;
+    border-radius: 0;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .left .container-promo {
+    height: 100%;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .right {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .right .container-text {
+    overflow: visible;
+    height: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -1884,7 +2803,7 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     border-right: 2px solid #777;
   }
   body .nav .nav-main-title .gtav-logo {
-    height: 2rem;
+    height: 1.5rem;
     width: 8rem;
     margin-left: 0.5rem;
   }
@@ -2145,23 +3064,28 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
   body .GamePurchase-container .Cards .GameCard-container:last-child .GameCard__btn-select {
     height: 60%;
   }
+  body .DlcSlider-container {
+    border: 1px solid rgb(255, 234, 0);
+    height: 70vh;
+  }
   body .DlcSlider-container .DlcCards-container {
-    height: 30vh;
+    height: 50vh;
     max-height: 500px;
-    width: 90vw;
+    width: 100vw;
+    margin: 0 auto;
   }
   body .DlcSlider-container .DlcCards-container::-webkit-scrollbar {
     display: none;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container {
-    width: 70%;
+    width: 90%;
     min-width: 300px;
-    height: 90%;
-    max-height: 300px;
+    height: 100%;
+    max-height: 400px;
     margin: 0 0.5rem;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container:first-child {
-    margin-left: 0;
+    margin-left: 1.5rem;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container .logo {
     height: 80px;
@@ -2208,5 +3132,778 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     bottom: 15px;
     left: 15px;
     color: white;
+  }
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb {
+    border: 1px solid rgb(255, 204, 0);
+    height: 100%;
+  }
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .logo {
+    width: 150px;
+    height: 150px;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal {
+    background-color: rgba(0, 0, 0, 0.904);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 101%;
+    height: 100%;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap {
+    border-radius: 20px;
+    border: 1px solid #777;
+    width: 95vw;
+    height: 95vh;
+    max-width: 1200px;
+    overflow: hidden;
+    background-color: #000;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    -ms-overflow-style: 10px;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container::-webkit-scrollbar {
+    display: none;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .close-btn {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #777;
+    background-color: rgba(26, 26, 26, 0.662745098);
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+    z-index: 20;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .close-btn:hover, body .DlcSlider-container .DlcCard-container-Modal .wrap .container .close-btn:active {
+    transition: all 0.3s;
+    color: #000;
+    background-color: #fff;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner {
+    width: 100%;
+    height: 60%;
+    min-height: 400px;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner .logo {
+    width: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container {
+    width: 100%;
+    height: 90%;
+    max-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: top;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid #777;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: none;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container .promo {
+    border: 1px solid rgb(0, 255, 242);
+    width: 150%;
+    height: 100%;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text {
+    height: 100%;
+    width: 90%;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 2rem auto;
+    color: white;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container img {
+    width: 100%;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container p, body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container span, body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container ul {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    cursor: -webkit-grab;
+    cursor: grab;
+    display: flex;
+    width: 100%;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container .glider-img {
+    flex-shrink: 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    scroll-snap-align: center;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem auto;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
+    width: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper .swiperSlide-img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    /* Center slide text vertically */
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    cursor: -webkit-grab;
+    cursor: grab;
+    display: flex;
+    width: 100%;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container .glider-img {
+    flex-shrink: 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    scroll-snap-align: center;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem auto;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
+    width: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper {
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper .swiperSlide-img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    /* Center slide text vertically */
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .swiperSlide {
+    height: 70vh;
+    width: 100%;
+  }
+  body .swiperSlide .DlcCards-container {
+    height: 50vh;
+    max-height: 500px;
+    width: 100vw;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+  body .swiperSlide .DlcCards-container::-webkit-scrollbar {
+    display: none;
+  }
+  body .swiperSlide .DlcCards-container .DlcCard-container {
+    width: 70%;
+    min-width: 300px;
+    height: 100%;
+    max-height: 400px;
+    margin: 0 0.5rem;
+  }
+  body .swiperSlide .DlcCards-container .DlcCard-container:first-child {
+    margin-left: 1.5rem;
+  }
+  body .swiperSlide .DlcCards-container .DlcCard-container .logo {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 5;
+  }
+  body .swiperSlide .DlcCards-container .DlcCard-container .promo-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .swiperSlide .DlcCards-container .DlcCard-container .promo-container .promo-bg {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.599137931) 53%, rgba(0, 0, 0, 0) 100%);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  body .swiperSlide .DlcCards-container .DlcCard-container .promo-container .promo {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    height: 105%;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  body .swiperSlide .DlcCards-container .DlcCard-container .title {
+    font-size: 15px;
+    font-weight: 800;
+    z-index: 5;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+  }
+  body .swiperSlide .DlcCards-container .DlcCard-container--mb {
+    border: 1px solid rgb(255, 204, 0);
+    height: 100%;
+  }
+  body .swiperSlide .DlcCards-container .DlcCard-container--mb .bg .logo {
+    width: 150px;
+    height: 150px;
+  }
+  body .swiperSlide .DlcCard-container-Modal {
+    background-color: rgba(0, 0, 0, 0.904);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 101%;
+    height: 100%;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap {
+    border-radius: 20px;
+    border: 1px solid #777;
+    width: 95vw;
+    height: 95vh;
+    max-width: 1200px;
+    overflow: hidden;
+    background-color: #000;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    -ms-overflow-style: 10px;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container::-webkit-scrollbar {
+    display: none;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .close-btn {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #777;
+    background-color: rgba(26, 26, 26, 0.662745098);
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+    z-index: 20;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .close-btn:hover, body .swiperSlide .DlcCard-container-Modal .wrap .container .close-btn:active {
+    transition: all 0.3s;
+    color: #000;
+    background-color: #fff;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-banner {
+    width: 100%;
+    height: 60%;
+    min-height: 400px;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-banner .logo {
+    width: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-banner .promo-container {
+    width: 100%;
+    height: 90%;
+    max-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: top;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid #777;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: none;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container .promo {
+    border: 1px solid rgb(0, 255, 242);
+    width: 150%;
+    height: 100%;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text {
+    height: 100%;
+    width: 90%;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 2rem auto;
+    color: white;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container img {
+    width: 100%;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container p, body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container span, body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container ul {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    cursor: -webkit-grab;
+    cursor: grab;
+    display: flex;
+    width: 100%;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container .glider-img {
+    flex-shrink: 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    scroll-snap-align: center;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem auto;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
+    width: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper .swiperSlide-img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    /* Center slide text vertically */
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    cursor: -webkit-grab;
+    cursor: grab;
+    display: flex;
+    width: 100%;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container .glider-img {
+    flex-shrink: 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    scroll-snap-align: center;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem auto;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
+    width: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper {
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper .swiperSlide-img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background-color: white;
+  }
+  body .RolesSlider-container {
+    margin: 10rem auto;
+    width: 100vw;
+    max-width: 1500px;
+    overflow: hidden;
+  }
+  body .RolesSlider-container .slider-text-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .RolesSlider-container .slider-text-container h4 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  body .RolesSlider-container .slider-text-container .slider-btn-container {
+    display: flex;
+    align-items: center;
+    margin: 0 1.5rem 0 0;
+  }
+  body .RolesSlider-container .slider-text-container .slider-btn-container svg {
+    transition: all 0.6s;
+    cursor: pointer;
+    padding: 10px;
+  }
+  body .RolesSlider-container .slider-text-container .slider-btn-container svg:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  body .RolesSlider-container .slider-text-container .slider-btn-container svg:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  body .RolesSlider-container .slider-text-container .slider-btn-container svg:hover, body .RolesSlider-container .slider-text-container .slider-btn-container svg:active {
+    background-color: #777;
+    transition: all 0.6s;
+  }
+  body .RolesSlider-container .RolesCards-container .RolesCard-container {
+    height: 90vw;
+    width: 90vw;
+    max-width: 500px;
+    margin: 0 10px;
+  }
+  body .RolesSlider-container .RolesCards-container .RolesCard-container:first-child {
+    margin-left: 1.5rem;
+  }
+  body .RolesSlider-container .RolesCards-container .RolesCard-container:last-child {
+    margin-right: 1.5rem;
+  }
+  body .RolesSlider-container .RolesCards-container .modal {
+    height: 100%;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content {
+    overflow: scroll;
+    height: 90vh;
+    display: block;
+    width: 95%;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .left {
+    width: 100%;
+    height: 50vh;
+    max-height: 700px;
+    opacity: 0.1;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .left .container-promo {
+    height: 100%;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right .close-btn {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #777;
+    background-color: rgba(26, 26, 26, 0.6235294118);
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right .close-btn:hover, body .RolesSlider-container .RolesCards-container .modal .modal-content .right .close-btn:active {
+    transition: all 0.3s;
+    color: #000;
+    background-color: #fff;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right .container-text {
+    overflow: visible;
+    height: 100%;
+    width: 90%;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right .container-text div span {
+    font-size: 1.2rem;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right .container-text div h3 {
+    font-size: 1.8rem;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right .container-text .learnMoreBox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 1rem;
+  }
+  body .RolesSlider-container .RolesCards-container .modal .modal-content .right .container-text .learnMoreBox span {
+    font-size: 1rem;
+    width: 80%;
+  }
+  body .StrikeSlider-container {
+    margin: 10rem auto;
+    width: 100vw;
+    max-width: 1500px;
+    overflow: hidden;
+  }
+  body .StrikeSlider-container .StrikeCards-container .StrikeCard-container {
+    height: 90vw;
+    width: 90vw;
+    max-width: 500px;
+    margin: 0 10px;
+  }
+  body .StrikeSlider-container .StrikeCards-container .StrikeCard-container:first-child {
+    margin-left: 1.5rem;
+  }
+  body .StrikeSlider-container .StrikeCards-container .StrikeCard-container:last-child {
+    margin-right: 1.5rem;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal {
+    height: 100%;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content {
+    overflow: scroll;
+    height: 90vh;
+    display: block;
+    width: 95%;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .left {
+    width: 100%;
+    height: 50vh;
+    max-height: 700px;
+    opacity: 0.1;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .left .container-promo {
+    height: 100%;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .right {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .right .close-btn {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #777;
+    background-color: rgba(26, 26, 26, 0.6235294118);
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .right .close-btn:hover, body .StrikeSlider-container .StrikeCards-container .modal .modal-content .right .close-btn:active {
+    transition: all 0.3s;
+    color: #000;
+    background-color: #fff;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .right .container-text {
+    overflow: visible;
+    height: 100%;
+    width: 90%;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .right .container-text div span {
+    font-size: 1.2rem;
+  }
+  body .StrikeSlider-container .StrikeCards-container .modal .modal-content .right .container-text div h3 {
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=style.css.map */

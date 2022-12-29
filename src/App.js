@@ -2,7 +2,6 @@ import Home from "./Home";
 import Nav from './Components/Nav'
 import GtaOnlineHome from "./GtaOnlineHome";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
 function App() {
   return (
     <div className="App">
