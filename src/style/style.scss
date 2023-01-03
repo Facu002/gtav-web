@@ -92,7 +92,6 @@ body{
     .banner-container,
     .banner-container__online{
         position: relative;
-
         .bannerImg-background{
             height: 70vh;
             width: 100vw;
@@ -251,7 +250,6 @@ body{
             align-items: center;
             .MainSpects-gtaOnline__text{
                 color: #fff;
-                
                 width: 50%;
                 h3{
                     font-size: 2.5rem;
@@ -381,13 +379,6 @@ body{
                         justify-content: flex-start;
                     }
                     .GameCard-text__platforms{
-                        // display: flex;
-                        // align-items: center;
-                        // justify-content: space-evenly;
-                        // width: 100%;
-                        // img{
-                        //     
-                        // }
                         display: grid;
                         grid-template-columns: repeat(3, 120px);
                         grid-row: auto;
@@ -405,11 +396,8 @@ body{
                             justify-content: flex-start;
                             align-items: flex-start;
                             &:last-child{
-                                // width: 25px;
                                 height: 25px;
                                 justify-self: flex-start;
-                                // 
-                                
                             }
                         }
                     }
@@ -422,7 +410,6 @@ body{
                     }
                 }
                 .GameCard-text__hidden{
-                    // transition: all ease-in 0.3s;
                     height: 10px;
                     opacity: 0;
                 }
@@ -447,17 +434,6 @@ body{
                     span{
                         font-size: 15px;
                     }
-                    // .select-box{
-                    //     transition: all 0.2s;
-                    //     // opacity: 0;
-                    //     height: 0;
-                    // }
-                    // &:hover{
-                    //     background-color: #fff;
-                    //     color: #000;
-                    //     // transition: all ease-in 0.3s ease-in-out;
-                    // }
-                    
                 }
                 
                 .GameCard__btn-select{
@@ -468,7 +444,6 @@ body{
                     cursor: default;
                     background-color: #1A1A1A;
                     transition: height 0.4s;
-
                     .select-box{
                         display: flex;
                         flex-direction: column;
@@ -477,7 +452,6 @@ body{
                         height: 80%;
                         width: 90%;
                         transition: all ease-in 0.3s ease-in-out;
-                        
                         button{
                             width: 90%;
                             max-width: 400px;
@@ -489,7 +463,6 @@ body{
                             img{
                                 width: 100px;
                             }
-                            
                         }
                         .sony-btn{
                             border: 1.5px solid #00439C;
@@ -533,14 +506,12 @@ body{
             display: flex;
             justify-content: space-between;
             margin: 0 1.5rem ;
-
             h4{
                 color: #fff;
             }
             .slider-btn-container{
                 display: flex;
                 align-items: center;
-                
                 svg{
                 transition: all 0.6s;
                 cursor: pointer;
@@ -641,7 +612,6 @@ body{
                     color: #ffff;
                 }
             }
-            
         }
         
         .DlcCard-container-Modal{
@@ -680,39 +650,6 @@ body{
                 &::-webkit-scrollbar {
                     display: none;
                 }
-                // .close-btn{
-                //     position: absolute;
-                //     padding: 0;
-                //     margin: 0;
-                //     z-index: 5;
-                //     right: 5%;
-                //     top: 10%;
-                //     border-radius: 100px;
-                //     transition: all 0.3s;
-                //     border: none;
-                //     &:hover{
-                //         svg{
-                //             fill: #000;
-                //             color: #000;
-                //             background-color: #fff;
-                //             stroke: #000;
-                //             line{
-                //                 fill: #000;
-                //                 color: #000;
-                //             }
-                //             transition: all 0.3s;
-                //         }
-                //     }
-                //     svg{
-                //         background-color: rgba(0, 0, 0, 0.626);
-                //         border-radius: 100px;
-                //         border: none;
-                //         border-radius: 50%;
-                //         border: 1px solid #fff;
-                //         cursor: pointer;
-                //         transition: all 0.3s;
-                //     }
-                // }
                 .close-btn{
                     position: absolute;
                     right: 5%;
@@ -738,7 +675,6 @@ body{
                     min-height: 500px;
                     background-position: center;
                     position: relative;
-                    // border: 1px solid red;
                     display: flex;
                     align-items: flex-end;
                 
@@ -774,9 +710,6 @@ body{
                             .promo{
                                 width: 100%;
                                 height: 135%;
-                                // border: 1px solid rgb(0, 255, 242);
-                                // flex-shrink: 0;
-                                // scale: 1.1;
                             }
                         }
                     }
@@ -810,10 +743,6 @@ body{
                                 object-fit: cover;
                                 scroll-snap-align: center;
                             }
-                                // img{
-                                // width: 100%;
-
-                                // }
                         }
                         .swiper{
                             height: 500px;
@@ -824,56 +753,24 @@ body{
                             transform: translateX(-50%);
                             margin: 2rem auto;
                             cursor: grab;
-                            // border: 1px solid red;
-                            
-                            // display: flex;
-                            // flex-direction: row;
-                            // overflow: hidden;
-                            
                                 .swiper-img{
                                     width: 100%;
                                     border-radius: 20px;
-                                    // border: 1px solid red;
                                     background-size: cover;
                                     background-position: center;
-                                    // img{
-                                    //     width: 100%;
-                                    //     height: 300px;
-                                    // }
                                 }
                                 .swiper-wrapper{
                                     width: 80%;
                                     height: 100%;
-                                    // border: 1px solid red;
-
                                     text-align: center;
                                     font-size: 18px;
                                     background: #fff;
-
-                                    // display: -webkit-box;
-                                    // display: -ms-flexbox;
-                                    // display: -webkit-flex;
-                                    // display: flex;
-                                    // -webkit-box-pack: center;
-                                    // -ms-flex-pack: center;
-                                    // -webkit-justify-content: center;
-                                    // justify-content: center;
-                                    // -webkit-box-align: center;
-                                    // -ms-flex-align: center;
-                                    // -webkit-align-items: center;
-                                    // align-items: center;
-
                                     .swiperSlide-img{
                                         background-size: cover;
                                         background-position: center;
                                         border-radius: 20px;
-                                        // display: block;
                                         width: 100%;
                                         height: 100%;
-                                        // // background-color: red;
-                                        // object-fit: cover;
-                                        /* Center slide text vertically */
-                                    
                                     }
                                 }
                             
@@ -903,522 +800,506 @@ body{
 
         }
     }
-    .caca{
-        width: 100%;
-        height: auto;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        overflow: visible;
-
-    .swiper{
-        height: 60vh;
-        width: 100%;
-        overflow: visible;
-        .DlcCards-container{
-            height: 60vh;
-            width: 700px;
-            display: flex;
-            align-items: flex-end;
-            overflow-x: scroll;
-            overflow-y: visible;
-            scroll-behavior: smooth;
-            list-style: none;
-            padding: 0;
-            
-            scrollbar-width: none; 
-            -ms-overflow-style: none; 
-            &::-webkit-scrollbar {
-                display: none;
-            }
-            .DlcCard-container {
-            border: 1px solid rgb(255, 255, 0);
-
-                width: 100%;
-                max-width: 700px;
-                height: 90%;
-                max-height: 900px;
-                flex-shrink: 0;
-                border-radius: 15px;
-                position: relative;
-                cursor: pointer;
-                transition: all 0.5s;
-                background-position: center;
-                background-size: cover;
-                margin: 0 1.5rem 0 0;
-                &:hover{
-                    box-shadow:inset 0px 0px 0px 1px #fff;
-                    .promo-container{    
-                        .promo{
-                            transition: all 0.9s;
-                            left: -10px;
-                        }
-                    }
-                }
-                .logo{
-                    height: 150px;
-                    width: 150px;
-                    position: absolute;
-                    top: 50px;
-                    left: 50px;
-                    z-index: 5;
-                }
-                .promo-container{
-                    width: fit-content;
-                    height: fit-content;
-                    .promo-bg{
-                        height: 100%;
-                        width: 100%;
-                        background: linear-gradient(0deg, rgba(0,0,0,0.5991379310344828) 53%, rgba(0,0,0,0) 100%);
-                        z-index: 3;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                    }
-                    .promo{
-                        position: absolute;
-                        top: -5%;
-                        left: 0;
-                        background-position: center;
-                        background-size: cover;
-                        z-index: 2;
-                        height: 105%;
-                        width: 100%;
-                        cursor: pointer;
-                        transition: all 0.3s;
-                    }
-                }
-                .title{
-                    font-size: 2rem;
-                    font-weight: 800;
-                    z-index: 5;
-                    position: absolute;
-                    bottom: 50px;
-                    left: 50px;
-                    color: #ffff;
-                }
-            }
-            .DlcCard-container-Modal{
-                background-color: rgba(0, 0, 0, 0.904);
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                z-index: 100;
-                transform: translate(-50%, -50%);
-                width: 101%;
-                height: 100%;
-                margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .wrap{
-                    border-radius: 20px;
-                    border: 1px solid #777;
-                    width: 95vw;
-                    height: 95vh;
-                    max-width: 1200px;
-                    overflow: hidden;
-                    background-color: #000;
-                .container{
-                    margin: 0 auto;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100%;
-                    height: 100%;
-                    overflow-y: scroll;
-                    overflow-x: hidden;
-                    scroll-behavior: smooth;
-                    scrollbar-width: thin;
-                    -ms-overflow-style: 10px; 
-                    &::-webkit-scrollbar {
-                        display: none;
-                    }
-                    
-                    .close-btn{
-                        position: absolute;
-                        right: 5%;
-                        top: 10%;
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 100px;
-                        border: 1px solid #777;
-                        background-color: #1a1a1aa9;
-                        cursor: pointer;
-                        color: #fff;
-                        transition: all 0.3s;
-                        z-index: 20;
-                        &:hover,&:active{
-                            transition: all 0.3s;
-                            color: #000;
-                            background-color: #fff;
-                        }
-                    }
-                    .modal-banner{
-                        width: 100%;
-                        height: 60%;
-                        min-height: 500px;
-                        background-position: center;
-                        position: relative;
-                        // border: 1px solid red;
-                        display: flex;
-                        align-items: flex-end;
-                    
-                        .logo{
-                            width: 150px;
-                            max-width: 150px;
-                            max-height: 150px;
-                            position: absolute;
-                            top: 10%;
-                            left: 10%;
-                            z-index: 1;
-                        }
-                        .promo-container{
-                            width: 100%;
-                            height: 90%;
-                            max-height: 500px;
-                            margin: 0 auto;
-                            display: flex;
-                            justify-content: center;
-                            align-items: flex-end;
-                            background-position: top;
-                            background-size: cover;
-                            border-top-left-radius: 15px;
-                            border-top-right-radius: 15px;
-                            border: 1px solid #777;
-                            .promo-container{
-                                height: 120%;
-                                overflow: hidden;
-                                display: flex;
-                                align-items: flex-start;
-                                justify-content: center;
-                                border: none;
-                                .promo{
-                                    width: 100%;
-                                    height: 135%;
-                                    // border: 1px solid rgb(0, 255, 242);
-                                    // flex-shrink: 0;
-                                    // scale: 1.1;
-                                }
-                            }
-                        }
-                    }
-                    .modal-text{
-                        height: 100%;
-                        .text-container{
-                            width: 70%;
-                            height: fit-content;
-                            margin: 2rem auto;
-                            color: #ffff;
-                            img{
-                                width: 100%;
-                            }
-                            h4{
-                                font-size: 2.5rem;
-                            }
-                            p,span,ul{
-                                font-size: 1.5rem;
-                                line-height: 40px;
-                            }
-                            .glider-container{
-                                overflow-x: scroll;
-                                scroll-snap-type: x mandatory;
-                                cursor: grab;
-                                display: flex;
-                                width:100% ;
-                                .glider-img{
-                                    flex-shrink: 0;
-                                    width: 100%;
-                                    object-fit: cover;
-                                    scroll-snap-align: center;
-                                }
-                            }
-                            .swiper{
-                                height: 500px;
-                                width: 120%;
-                                position: relative;
-                                z-index: 3;
-                                left: 50%;
-                                transform: translateX(-50%);
-                                margin: 2rem auto;
-                                cursor: grab;
-                                
-                                    .swiper-img{
-                                        width: 100%;
-                                        border-radius: 20px;
-                                        background-size: cover;
-                                        background-position: center;
-                                    }
-                                    .swiper-wrapper{
-                                        width: 80%;
-                                        height: 100%;
     
-                                        text-align: center;
-                                        font-size: 18px;
-                                        background: #fff;
-    
-                                        .swiperSlide-img{
-                                            background-size: cover;
-                                            background-position: center;
-                                            border-radius: 20px;
-                                            width: 100%;
-                                            height: 100%;
-                                        
-                                        }
-                                    }
-                                
-                                .swiper-scrollbar{
-                                    .swiper-scrollbar.swiper-scrollbar-horizontal{
-                                        background: rgb(255, 255, 255); 
-                                        color: #fff;
-                                        background-color: #ffff;
-                                    }
-                                    .swiper-scrollbar-drag{
-                                        background: rgb(255, 255, 255); 
-                                        color: #fff;
-                                        background-color: #ffff;
-                                    }
-                                    .swiper-scrollbar-drag:after{
-                                        background: rgb(255, 255, 255); 
-                                        color: #fff;
-                                        background-color: #ffff;
-                                    }
-    
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-    
-            } 
-        }
-        
-    }
-    .btn-container{
-        align-self: flex-end;
-        right: 0;
-        width: 200px;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        background-color: #9c8f00;
-        .swiper-button-next,
-        .swiper-button-prev {
-            position: inherit;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 50px;
-            height: 50px;
-            background-color: white;
-            background-color: rgba(255, 255, 255, 0.5);
-            // right:10px;
-            // padding: 10px;
-            // margin: 10px;
-            border-radius: 10px;
-            padding: 0;
-            margin: 0;
-            // color: #000 !important;
-            // fill: black !important;
-            // stroke: black !important;
-        }
-    }
-    .DlcCard-container-Modal{
-        background-color: rgba(0, 0, 0, 0.904);
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        z-index: 100;
-        transform: translate(-50%, -50%);
-        width: 101%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .wrap{
-            border-radius: 20px;
-            border: 1px solid #777;
-            width: 95vw;
-            height: 95vh;
-            max-width: 1200px;
-            overflow: hidden;
-            background-color: #000;
-        .container{
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            scrollbar-width: thin;
-            -ms-overflow-style: 10px; 
-            &::-webkit-scrollbar {
-                display: none;
-            }
-            .close-btn{
-                position: absolute;
-                right: 5%;
-                top: 10%;
-                width: 40px;
-                height: 40px;
-                border-radius: 100px;
-                border: 1px solid #777;
-                background-color: #1a1a1aa9;
-                cursor: pointer;
-                color: #fff;
-                transition: all 0.3s;
-                z-index: 20;
-                &:hover,&:active{
-                    transition: all 0.3s;
-                    color: #000;
-                    background-color: #fff;
-                }
-            }
-            .modal-banner{
-                width: 100%;
-                height: 60%;
-                min-height: 500px;
-                background-position: center;
-                position: relative;
-                // border: 1px solid red;
-                display: flex;
-                align-items: flex-end;
-            
-                .logo{
-                    width: 150px;
-                    max-width: 150px;
-                    max-height: 150px;
-                    position: absolute;
-                    top: 10%;
-                    left: 10%;
-                    z-index: 1;
-                }
-                .promo-container{
-                    width: 100%;
-                    height: 90%;
-                    max-height: 500px;
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                    background-position: top;
-                    background-size: cover;
-                    border-top-left-radius: 15px;
-                    border-top-right-radius: 15px;
-                    border: 1px solid #777;
-                    .promo-container{
-                        height: 120%;
-                        overflow: hidden;
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: center;
-                        border: none;
-                        .promo{
-                            width: 100%;
-                            height: 135%;
-                            // border: 1px solid rgb(0, 255, 242);
-                            // flex-shrink: 0;
-                            // scale: 1.1;
-                        }
-                    }
-                }
-            }
-            .modal-text{
-                height: 100%;
-                .text-container{
-                    width: 70%;
-                    height: fit-content;
-                    margin: 2rem auto;
-                    color: #ffff;
-                    img{
-                        width: 100%;
-                    }
-                    h4{
-                        font-size: 2.5rem;
-                    }
-                    p,span,ul{
-                        font-size: 1.5rem;
-                        line-height: 40px;
-                    }
-                    .glider-container{
-                        overflow-x: scroll;
-                        scroll-snap-type: x mandatory;
-                        cursor: grab;
-                        display: flex;
-                        width:100% ;
-                        .glider-img{
-                            flex-shrink: 0;
-                            width: 100%;
-                            object-fit: cover;
-                            scroll-snap-align: center;
-                        }
-                    }
-                    .swiper{
-                        height: 500px;
-                        width: 120%;
-                        position: relative;
-                        z-index: 3;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        margin: 2rem auto;
-                        cursor: grab;
-                            .swiper-img{
-                                width: 100%;
-                                border-radius: 20px;
-                                background-size: cover;
-                                background-position: center;
-                            }
-                            .swiper-wrapper{
-                                width: 80%;
-                                height: 100%;
-                                text-align: center;
-                                font-size: 18px;
-                                background: #fff;
-
-                                .swiperSlide-img{
-                                    background-size: cover;
-                                    background-position: center;
-                                    border-radius: 20px;
-                                    width: 100%;
-                                    height: 100%;
-                                
-                                }
-                            }
+    // .caca{
+    //     width: 100%;
+    //     height: auto;
+    //     position: relative;
+    //     display: flex;
+    //     flex-direction: column;
+    //     overflow: visible;
+    //     border: 3px solid yellow;
+    //     background-color: #FCAF17;
+    //     .swiper{
+    //         height: 60vh;
+    //         width: 100%;
+    //         overflow: visible;
+    //         .DlcCards-container{
+    //             height: 60vh;
+    //             width: 700px;
+    //             display: flex;
+    //             align-items: flex-end;
+    //             overflow-x: scroll;
+    //             overflow-y: visible;
+    //             scroll-behavior: smooth;
+    //             list-style: none;
+    //             padding: 0;
+                
+    //             scrollbar-width: none; 
+    //             -ms-overflow-style: none; 
+    //             &::-webkit-scrollbar {
+    //                 display: none;
+    //             }
+    //             .DlcCard-container {
+    //                 width: 100%;
+    //                 max-width: 700px;
+    //                 height: 90%;
+    //                 max-height: 900px;
+    //                 flex-shrink: 0;
+    //                 border-radius: 15px;
+    //                 position: relative;
+    //                 cursor: pointer;
+    //                 transition: all 0.5s;
+    //                 background-position: center;
+    //                 background-size: cover;
+    //                 margin: 0 1.5rem 0 0;
+    //                 &:hover{
+    //                     box-shadow:inset 0px 0px 0px 1px #fff;
+    //                     .promo-container{    
+    //                         .promo{
+    //                             transition: all 0.9s;
+    //                             left: -10px;
+    //                         }
+    //                     }
+    //                 }
+    //                 .logo{
+    //                     height: 150px;
+    //                     width: 150px;
+    //                     position: absolute;
+    //                     top: 50px;
+    //                     left: 50px;
+    //                     z-index: 5;
+    //                 }
+    //                 .promo-container{
+    //                     width: fit-content;
+    //                     height: fit-content;
+    //                     .promo-bg{
+    //                         height: 100%;
+    //                         width: 100%;
+    //                         background: linear-gradient(0deg, rgba(0,0,0,0.5991379310344828) 53%, rgba(0,0,0,0) 100%);
+    //                         z-index: 3;
+    //                         position: absolute;
+    //                         top: 0;
+    //                         left: 0;
+    //                     }
+    //                     .promo{
+    //                         position: absolute;
+    //                         top: -5%;
+    //                         left: 0;
+    //                         background-position: center;
+    //                         background-size: cover;
+    //                         z-index: 2;
+    //                         height: 105%;
+    //                         width: 100%;
+    //                         cursor: pointer;
+    //                         transition: all 0.3s;
+    //                     }
+    //                 }
+    //                 .title{
+    //                     font-size: 2rem;
+    //                     font-weight: 800;
+    //                     z-index: 5;
+    //                     position: absolute;
+    //                     bottom: 50px;
+    //                     left: 50px;
+    //                     color: #ffff;
+    //                 }
+    //             }
+    //             .DlcCard-container-Modal{
+    //                 background-color: rgba(0, 0, 0, 0.904);
+    //                 position: fixed;
+    //                 top: 50%;
+    //                 left: 50%;
+    //                 z-index: 100;
+    //                 transform: translate(-50%, -50%);
+    //                 width: 101%;
+    //                 height: 100%;
+    //                 margin: 0 auto;
+    //                 display: flex;
+    //                 align-items: center;
+    //                 justify-content: center;
+    //                 .wrap{
+    //                     border-radius: 20px;
+    //                     border: 1px solid #777;
+    //                     width: 95vw;
+    //                     height: 95vh;
+    //                     max-width: 1200px;
+    //                     overflow: hidden;
+    //                     background-color: #000;
+    //                 .container{
+    //                     margin: 0 auto;
+    //                     display: flex;
+    //                     flex-direction: column;
+    //                     align-items: center;
+    //                     width: 100%;
+    //                     height: 100%;
+    //                     overflow-y: scroll;
+    //                     overflow-x: hidden;
+    //                     scroll-behavior: smooth;
+    //                     scrollbar-width: thin;
+    //                     -ms-overflow-style: 10px; 
+    //                     &::-webkit-scrollbar {
+    //                         display: none;
+    //                     }
                         
-                        .swiper-scrollbar{
-                            .swiper-scrollbar.swiper-scrollbar-horizontal{
-                                background: rgb(255, 255, 255); 
-                                color: #fff;
-                                background-color: #ffff;
-                            }
-                            .swiper-scrollbar-drag{
-                                background: rgb(255, 255, 255); 
-                                color: #fff;
-                                background-color: #ffff;
-                            }
-                            .swiper-scrollbar-drag:after{
-                                background: rgb(255, 255, 255); 
-                                color: #fff;
-                                background-color: #ffff;
-                            }
+    //                     .close-btn{
+    //                         position: absolute;
+    //                         right: 5%;
+    //                         top: 10%;
+    //                         width: 40px;
+    //                         height: 40px;
+    //                         border-radius: 100px;
+    //                         border: 1px solid #777;
+    //                         background-color: #1a1a1aa9;
+    //                         cursor: pointer;
+    //                         color: #fff;
+    //                         transition: all 0.3s;
+    //                         z-index: 20;
+    //                         &:hover,&:active{
+    //                             transition: all 0.3s;
+    //                             color: #000;
+    //                             background-color: #fff;
+    //                         }
+    //                     }
+    //                     .modal-banner{
+    //                         width: 100%;
+    //                         height: 60%;
+    //                         min-height: 500px;
+    //                         background-position: center;
+    //                         position: relative;
+    //                         display: flex;
+    //                         align-items: flex-end;
+    //                         .logo{
+    //                             width: 150px;
+    //                             max-width: 150px;
+    //                             max-height: 150px;
+    //                             position: absolute;
+    //                             top: 10%;
+    //                             left: 10%;
+    //                             z-index: 1;
+    //                         }
+    //                         .promo-container{
+    //                             width: 100%;
+    //                             height: 90%;
+    //                             max-height: 500px;
+    //                             margin: 0 auto;
+    //                             display: flex;
+    //                             justify-content: center;
+    //                             align-items: flex-end;
+    //                             background-position: top;
+    //                             background-size: cover;
+    //                             border-top-left-radius: 15px;
+    //                             border-top-right-radius: 15px;
+    //                             border: 1px solid #777;
+    //                             .promo-container{
+    //                                 height: 120%;
+    //                                 overflow: hidden;
+    //                                 display: flex;
+    //                                 align-items: flex-start;
+    //                                 justify-content: center;
+    //                                 border: none;
+    //                                 .promo{
+    //                                     width: 100%;
+    //                                     height: 135%;
+    //                                 }
+    //                             }
+    //                         }
+    //                     }
+    //                     .modal-text{
+    //                         height: 100%;
+    //                         .text-container{
+    //                             width: 70%;
+    //                             height: fit-content;
+    //                             margin: 2rem auto;
+    //                             color: #ffff;
+    //                             img{
+    //                                 width: 100%;
+    //                             }
+    //                             h4{
+    //                                 font-size: 2.5rem;
+    //                             }
+    //                             p,span,ul{
+    //                                 font-size: 1.5rem;
+    //                                 line-height: 40px;
+    //                             }
+    //                             .glider-container{
+    //                                 overflow-x: scroll;
+    //                                 scroll-snap-type: x mandatory;
+    //                                 cursor: grab;
+    //                                 display: flex;
+    //                                 width:100% ;
+    //                                 .glider-img{
+    //                                     flex-shrink: 0;
+    //                                     width: 100%;
+    //                                     object-fit: cover;
+    //                                     scroll-snap-align: center;
+    //                                 }
+    //                             }
+    //                             .swiper{
+    //                                 height: 500px;
+    //                                 width: 120%;
+    //                                 position: relative;
+    //                                 z-index: 3;
+    //                                 left: 50%;
+    //                                 transform: translateX(-50%);
+    //                                 margin: 2rem auto;
+    //                                 cursor: grab;
+    //                                     .swiper-img{
+    //                                         width: 100%;
+    //                                         border-radius: 20px;
+    //                                         background-size: cover;
+    //                                         background-position: center;
+    //                                     }
+    //                                     .swiper-wrapper{
+    //                                         width: 80%;
+    //                                         height: 100%;
+        
+    //                                         text-align: center;
+    //                                         font-size: 18px;
+    //                                         background: #fff;
+        
+    //                                         .swiperSlide-img{
+    //                                             background-size: cover;
+    //                                             background-position: center;
+    //                                             border-radius: 20px;
+    //                                             width: 100%;
+    //                                             height: 100%;
+    //                                         }
+    //                                     }
+                                    
+    //                                 .swiper-scrollbar{
+    //                                     .swiper-scrollbar.swiper-scrollbar-horizontal{
+    //                                         background: rgb(255, 255, 255); 
+    //                                         color: #fff;
+    //                                         background-color: #ffff;
+    //                                     }
+    //                                     .swiper-scrollbar-drag{
+    //                                         background: rgb(255, 255, 255); 
+    //                                         color: #fff;
+    //                                         background-color: #ffff;
+    //                                     }
+    //                                     .swiper-scrollbar-drag:after{
+    //                                         background: rgb(255, 255, 255); 
+    //                                         color: #fff;
+    //                                         background-color: #ffff;
+    //                                     }
+        
+    //                                 }
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+        
+    //             } 
+    //         }
+            
+    //     }
+    //     .btn-container{
+    //         align-self: flex-end;
+    //         right: 0;
+    //         width: 200px;
+    //         height: 60px;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         position: relative;
+    //         background-color: #9c8f00;
+    //         .swiper-button-next,
+    //         .swiper-button-prev {
+    //             position: inherit;
+    //             top: 0;
+    //             left: 0;
+    //             bottom: 0;
+    //             right: 0;
+    //             width: 50px;
+    //             height: 50px;
+    //             background-color: white;
+    //             background-color: rgba(255, 255, 255, 0.5);
+    //             border-radius: 10px;
+    //             padding: 0;
+    //             margin: 0;
+    //         }
+    //     }
+    //     .DlcCard-container-Modal{
+    //         background-color: rgba(0, 0, 0, 0.904);
+    //         position: fixed;
+    //         top: 50%;
+    //         left: 50%;
+    //         z-index: 100;
+    //         transform: translate(-50%, -50%);
+    //         width: 101%;
+    //         height: 100%;
+    //         margin: 0 auto;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         .wrap{
+    //             border-radius: 20px;
+    //             border: 1px solid #777;
+    //             width: 95vw;
+    //             height: 95vh;
+    //             max-width: 1200px;
+    //             overflow: hidden;
+    //             background-color: #000;
+    //         .container{
+    //             margin: 0 auto;
+    //             display: flex;
+    //             flex-direction: column;
+    //             align-items: center;
+    //             width: 100%;
+    //             height: 100%;
+    //             overflow-y: scroll;
+    //             overflow-x: hidden;
+    //             scroll-behavior: smooth;
+    //             scrollbar-width: thin;
+    //             -ms-overflow-style: 10px; 
+    //             &::-webkit-scrollbar {
+    //                 display: none;
+    //             }
+    //             .close-btn{
+    //                 position: absolute;
+    //                 right: 5%;
+    //                 top: 10%;
+    //                 width: 40px;
+    //                 height: 40px;
+    //                 border-radius: 100px;
+    //                 border: 1px solid #777;
+    //                 background-color: #1a1a1aa9;
+    //                 cursor: pointer;
+    //                 color: #fff;
+    //                 transition: all 0.3s;
+    //                 z-index: 20;
+    //                 &:hover,&:active{
+    //                     transition: all 0.3s;
+    //                     color: #000;
+    //                     background-color: #fff;
+    //                 }
+    //             }
+    //             .modal-banner{
+    //                 width: 100%;
+    //                 height: 60%;
+    //                 min-height: 500px;
+    //                 background-position: center;
+    //                 position: relative;
+    //                 display: flex;
+    //                 align-items: flex-end;
+                
+    //                 .logo{
+    //                     width: 150px;
+    //                     max-width: 150px;
+    //                     max-height: 150px;
+    //                     position: absolute;
+    //                     top: 10%;
+    //                     left: 10%;
+    //                     z-index: 1;
+    //                 }
+    //                 .promo-container{
+    //                     width: 100%;
+    //                     height: 90%;
+    //                     max-height: 500px;
+    //                     margin: 0 auto;
+    //                     display: flex;
+    //                     justify-content: center;
+    //                     align-items: flex-end;
+    //                     background-position: top;
+    //                     background-size: cover;
+    //                     border-top-left-radius: 15px;
+    //                     border-top-right-radius: 15px;
+    //                     border: 1px solid #777;
+    //                     .promo-container{
+    //                         height: 120%;
+    //                         overflow: hidden;
+    //                         display: flex;
+    //                         align-items: flex-start;
+    //                         justify-content: center;
+    //                         border: none;
+    //                         .promo{
+    //                             width: 100%;
+    //                             height: 135%;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //             .modal-text{
+    //                 height: 100%;
+    //                 .text-container{
+    //                     width: 70%;
+    //                     height: fit-content;
+    //                     margin: 2rem auto;
+    //                     color: #ffff;
+    //                     img{
+    //                         width: 100%;
+    //                     }
+    //                     h4{
+    //                         font-size: 2.5rem;
+    //                     }
+    //                     p,span,ul{
+    //                         font-size: 1.5rem;
+    //                         line-height: 40px;
+    //                     }
+    //                     .glider-container{
+    //                         overflow-x: scroll;
+    //                         scroll-snap-type: x mandatory;
+    //                         cursor: grab;
+    //                         display: flex;
+    //                         width:100% ;
+    //                         .glider-img{
+    //                             flex-shrink: 0;
+    //                             width: 100%;
+    //                             object-fit: cover;
+    //                             scroll-snap-align: center;
+    //                         }
+    //                     }
+    //                     .swiper{
+    //                         height: 500px;
+    //                         width: 120%;
+    //                         position: relative;
+    //                         z-index: 3;
+    //                         left: 50%;
+    //                         transform: translateX(-50%);
+    //                         margin: 2rem auto;
+    //                         cursor: grab;
+    //                             .swiper-img{
+    //                                 width: 100%;
+    //                                 border-radius: 20px;
+    //                                 background-size: cover;
+    //                                 background-position: center;
+    //                             }
+    //                             .swiper-wrapper{
+    //                                 width: 80%;
+    //                                 height: 100%;
+    //                                 text-align: center;
+    //                                 font-size: 18px;
+    //                                 background: #fff;
 
-                        }
-                    }
-                }
-            }
-        }
-    }
+    //                                 .swiperSlide-img{
+    //                                     background-size: cover;
+    //                                     background-position: center;
+    //                                     border-radius: 20px;
+    //                                     width: 100%;
+    //                                     height: 100%;
+                                    
+    //                                 }
+    //                             }
+                            
+    //                         .swiper-scrollbar{
+    //                             .swiper-scrollbar.swiper-scrollbar-horizontal{
+    //                                 background: rgb(255, 255, 255); 
+    //                                 color: #fff;
+    //                                 background-color: #ffff;
+    //                             }
+    //                             .swiper-scrollbar-drag{
+    //                                 background: rgb(255, 255, 255); 
+    //                                 color: #fff;
+    //                                 background-color: #ffff;
+    //                             }
+    //                             .swiper-scrollbar-drag:after{
+    //                                 background: rgb(255, 255, 255); 
+    //                                 color: #fff;
+    //                                 background-color: #ffff;
+    //                             }
 
-    } 
-    }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     } 
+    // }
+
     .RolesSlider-container{
         margin: 1rem auto;
         width: 100vw;
@@ -1539,8 +1420,6 @@ body{
                         color: #ffff;
                     }
                 }
-                
-                
             }
             
         }
@@ -1559,7 +1438,6 @@ body{
             justify-content: center;
             align-items: center;
             background-color: rgba(0, 0, 0, 0.904);
-
             .modal-content{
                 height: 90vh;
                 width: 95vw;
@@ -1588,9 +1466,6 @@ body{
                         width: 150%;
                         height: 100%;
                         position: absolute;
-                        // transform: translateY(-5%);
-                        // scale: 1.1;
-                        // clip-path: inset(0 20%  0 20% );
                         flex-shrink: 0;
                         pointer-events: none;
                     }
@@ -1649,8 +1524,6 @@ body{
                             .learnMoreBox{
                                 border: 1px solid #777;
                                 border-radius: 5px;
-                                // width: 100%;
-                                // height: 100px;
                                 margin: 0 auto;
                                 display: flex;
                                 flex-direction: column;
@@ -1686,7 +1559,6 @@ body{
             display: flex;
             justify-content: space-between;
             margin: 0 1.5rem ;
-
             h4{
                 color: #fff;
             }
@@ -1763,11 +1635,6 @@ body{
                         box-shadow:inset 0px 0px 0px 1px #fff;
                         transition: all 0.3s;
                         scale: 1.1;
-                        // .promo-container{    
-                        //     .promo-bg{
-                        //     }
-                            
-                        // }
                     }
                     .promo-container{
                         height: 100%;
@@ -1817,7 +1684,6 @@ body{
             justify-content: center;
             align-items: center;
             background-color: rgba(0, 0, 0, 0.904);
-
             .modal-content{
                 height: 90vh;
                 width: 95vw;
@@ -1846,9 +1712,6 @@ body{
                         width: 150%;
                         height: 100%;
                         position: absolute;
-                        // transform: translateY(-5%);
-                        // scale: 1.1;
-                        // clip-path: inset(0 20%  0 20% );
                         flex-shrink: 0;
                         pointer-events: none;
                     }
@@ -2328,11 +2191,9 @@ body{
                             font-size: 11px;
                             margin: 0 auto;
                             padding: 10px;
-                            // font-size: 18px;
                         }
                     }
                     .GameCard-text__hidden{
-                        // transition: all ease-in 0.1s;
                         height: 10px;
                         opacity: 0;
                         color: #000;
@@ -2341,9 +2202,7 @@ body{
                         transition: all ease-in 3s ease-in-out;
                         .select-box{
                             height: 1px;
-                            // opacity: 0;
                             transition: all ease-in 3s ease-in-out;
-
                         }
                     }
                     .GameCard__btn-select{
@@ -2383,11 +2242,6 @@ body{
                                 }
                             }
                         }
-                        // .select-box-hidden{
-                        //     height: 1px;
-                        //     opacity: 0;
-                        //     transition: all ease-in 3s ease-in-out;
-                        // }
                     }
                     &:last-child{
                         .GameCard__btn-select{
@@ -2435,7 +2289,6 @@ body{
             }
             .DlcCards-container{
                 height: 60vh;
-                // width: 90vw;
                 display: flex;
                 align-items: flex-end;
                 overflow-x: scroll;
@@ -2663,7 +2516,6 @@ body{
                     border-radius: 5px;
                     overflow: hidden;
                     pointer-events: all;
-
                     div{
                         display: flex;
                         align-items: center;
@@ -2671,8 +2523,6 @@ body{
                         background-color: #000;
 
                         svg{
-                            // border: 1px solid red;
-                            // margin: 0 auto;
                             cursor: pointer;
                             padding: 5px;
 
@@ -2689,9 +2539,6 @@ body{
                 grid-template-columns: repeat(2, minmax(400px, 100%));
                 justify-items: center;
                 align-items: center;
-                // gap: 100%;
-                // justify-content: space-between;
-                // align-items: center;
                 flex-shrink: 0%;
                 margin: 0 auto;
 
@@ -2714,7 +2561,6 @@ body{
                         border-radius: 5px;
                         cursor: pointer;
                         transition: height 0.2s;
-                        // transition: all ease-in 0.3s ease-in-out;
                         text-transform: uppercase;
                         font-weight: 900;
                         span{
@@ -2723,11 +2569,6 @@ body{
                         
                     }
                     .GameCard__btn-select{
-                        // height: fit-content;
-                        // // transition: all ease-in 0.3s;
-                        // position: relative;
-                        // bottom: 0;
-                        // top: auto;
                         height: 50%;
                         position: relative;
                         bottom: 0;
@@ -2744,14 +2585,13 @@ body{
                             height: 100%;
                             width: 90%;
                             button{
-                                margin: 1rem 0;
+                                margin: 0.5rem 0;
                                 width: 90%;
                                 height: 50px;
                                 background-color: #000;
                                 cursor: pointer;
                                 border: none;
                                 border-radius: 5px;
-                                // animation: selectPlatform 0.5s;
                                 img{
                                     width: 90px;
                                 }
@@ -3018,12 +2858,10 @@ body{
                 background: linear-gradient(0deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0) 100%);
                 .bannerText-container__logos{
                     width: fit-content;
-                    
                     img{
                         width: 60px;
                         height: 60px;
                     }
-
                 }
                 .bannerText-container__title{
                     width: 90%;
@@ -3035,7 +2873,6 @@ body{
                     }
                     p{
                         font-size: 0.9rem;
-
                     }
                 }
                 .bannerText-container__btns{
@@ -3059,7 +2896,6 @@ body{
         }
         .banner-container__online{
             position: relative;
-            // height: 70vh;
             .bannerImg-background{
                 background-image: url(../media/panoramic_banner_online.jpg);
                 z-index: -1;
@@ -3067,14 +2903,6 @@ body{
                 
             }
             .bannerImg-frontImg{
-                // background-image: url(../media/online-mobile-banner_img.png);
-                // background-position: center;
-                // height: 50vh;
-                // width: 100%;
-                // position: absolute;
-                // top: 0;
-                // left: 0;
-                // transform: none;
 
                 background-image: url(http://localhost:3000/static/media/online-mobile-banner_img.8869ba3c6b6070a31ed9.png);
                 background-position: center;
@@ -3089,12 +2917,9 @@ body{
                 background-size: cover;
                 background-clip: unset;
                 background-repeat: no-repeat;
-
-                
             }
             .bannerText-container{
                 bottom: 20%;
-                // top: auto;
                 .bannerText-container__title{
                     width: 90%;
                     h1{
@@ -3162,10 +2987,8 @@ body{
                     flex-direction: column;
                     align-items: flex-start;
                     margin: 10px 0;
-
                     h3{
                         font-size: 1.5rem;
-                        
                     }
                     p{
                         font-size: 0.9rem;
@@ -3174,7 +2997,6 @@ body{
                     img{
                         width: 80px;
                         margin: 0 auto;
-                        
                     }
                 }
                 .MainSpects-gtaOnline__img{
@@ -3214,8 +3036,6 @@ body{
                         background-color: #000;
 
                         svg{
-                            // border: 1px solid red;
-                            // margin: 0 auto;
                             cursor: pointer;
                             padding: 5px;
 
@@ -3227,33 +3047,19 @@ body{
                 }
             }
             .Cards{
-                // width: 100%;
-                // display: flex;
-                // justify-content: flex-start;
-                // align-items: center;
-                // flex-shrink: 0%;
-                // margin: 0 auto;
-
                 width: 200%;
                 display: grid;
                 grid-template-columns: repeat(2, minmax(300px, 100%));
                 justify-items: center;
                 align-items: center;
-                // gap: 100%;
-                // justify-content: space-between;
-                // align-items: center;
                 flex-shrink: 0%;
                 margin: 0 auto;
-                // border: 1px solid rgb(255, 251, 0);
-
                 .GameCard-container{
-                    max-height: 800px;
+                    max-height: 680px;
                     flex-shrink: 0;
                     width: 100%;
                     max-width: 90%;
-
                     margin: 0;
-                    
                     .GameCard-text{
                         margin: auto 0 0 10px;
                     }
@@ -3265,24 +3071,15 @@ body{
                         color: #ffff;
                         border-radius: 5px;
                         cursor: pointer;
-                        // transition: all ease-in 0.3s ease-in-out;
                         text-transform: uppercase;
                         font-weight: 900;
                         transition: height 0.2s;
-
                         span{
                             font-size: 12px;
                         }
-                        // &:hover{
-                        //     background-color: #fff;
-                        //     color: #000;
-                        //     transition: all ease-in 0.3s ease-in-out;
-                        // }
-                        
                     }
                     .GameCard__btn-select{
                         height: 30%;
-                        // transition: all ease-in 0.3s;
                         position: relative;
                         bottom: 0;
                         top: auto;
@@ -3295,17 +3092,16 @@ body{
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
-                            height: 100%;
+                            height: 90%;
                             width: 90%;
                             button{
-                                margin: 1rem 0;
+                                margin: 0.5rem 0;
                                 width: 90%;
                                 height: 50px;
                                 background-color: #000;
                                 cursor: pointer;
                                 border: none;
                                 border-radius: 5px;
-                                // animation: selectPlatform 0.5s;
                                 img{
                                     width: 90px;
                                 }
@@ -3322,7 +3118,6 @@ body{
             }
         }
         .DlcSlider-container{
-            border: 1px solid rgb(255, 234, 0);
             height: 70vh;
             .DlcCards-container{
                 height: 50vh;
@@ -3338,7 +3133,6 @@ body{
                     height: 100%;
                     max-height: 400px;
                     margin: 0 0.5rem;
-
                     &:first-child{
                         margin-left: 1.5rem ;
                     }
@@ -3386,7 +3180,6 @@ body{
                     }
                 }
                 .DlcCard-container--mb{
-                    border: 1px solid rgb(255, 204, 0);
                     height: 100%;
                     .bg{
                         .logo{
@@ -3457,10 +3250,8 @@ body{
                         min-height: 400px;
                         background-position: center;
                         position: relative;
-                        // border: 1px solid red;
                         display: flex;
                         align-items: flex-end;
-                    
                         .logo{
                             width: 120px;
                             max-width: 120px;
@@ -3491,11 +3282,8 @@ body{
                                 justify-content: center;
                                 border: none;
                                 .promo{
-                                    border: 1px solid rgb(0, 255, 242);
                                     width: 150%;
                                     height: 100%;
-                                    // flex-shrink: 0;
-                                    // scale: 1.1;
                                 }
                             }
                         }
@@ -3557,13 +3345,8 @@ body{
                                             background-size: cover;
                                             background-position: center;
                                             border-radius: 20px;
-                                            // display: block;
                                             width: 100%;
                                             height: 100%;
-                                            // // background-color: red;
-                                            // object-fit: cover;
-                                            /* Center slide text vertically */
-                                        
                                         }
                                     }
                                 
@@ -3600,10 +3383,6 @@ body{
                                     object-fit: cover;
                                     scroll-snap-align: center;
                                 }
-                                    // img{
-                                    // width: 100%;
-    
-                                    // }
                             }
                             .swiper{
                                 height: 250px;
@@ -3614,23 +3393,11 @@ body{
                                 transform: translateX(-50%);
                                 margin: 2rem auto;
                                 cursor: grab;
-                                
-                                // border: 1px solid red;
-                                
-                                // display: flex;
-                                // flex-direction: row;
-                                // overflow: hidden;
-                                
                                     .swiper-img{
                                         width: 100%;
                                         border-radius: 20px;
-                                        // border: 1px solid red;
                                         background-size: cover;
                                         background-position: center;
-                                        // img{
-                                        //     width: 100%;
-                                        //     height: 300px;
-                                        // }
                                     }
                                     .swiper-wrapper{
                                         width: 95%;
@@ -3642,13 +3409,8 @@ body{
                                             background-size: cover;
                                             background-position: center;
                                             border-radius: 20px;
-                                            // display: block;
                                             width: 100%;
                                             height: 100%;
-                                            // // background-color: red;
-                                            // object-fit: cover;
-                                            /* Center slide text vertically */
-                                        
                                         }
                                     }
                                 
@@ -3686,8 +3448,7 @@ body{
                 max-height: 500px;
                 width: 100vw;
                 margin: 0 auto;
-                border: 1px solid red;
-                
+                // border: 1px solid red;
                 &::-webkit-scrollbar {
                     display: none;
                 }
@@ -3745,7 +3506,7 @@ body{
                     }
                 }
                 .DlcCard-container--mb{
-                    border: 1px solid rgb(255, 204, 0);
+                    // border: 1px solid rgb(255, 204, 0);
                     height: 100%;
                     .bg{
                         .logo{
@@ -3816,7 +3577,6 @@ body{
                         min-height: 400px;
                         background-position: center;
                         position: relative;
-                        // border: 1px solid red;
                         display: flex;
                         align-items: flex-end;
                     
@@ -3850,11 +3610,8 @@ body{
                                 justify-content: center;
                                 border: none;
                                 .promo{
-                                    border: 1px solid rgb(0, 255, 242);
                                     width: 150%;
                                     height: 100%;
-                                    // flex-shrink: 0;
-                                    // scale: 1.1;
                                 }
                             }
                         }
@@ -3890,10 +3647,6 @@ body{
                                     object-fit: cover;
                                     scroll-snap-align: center;
                                 }
-                                    // img{
-                                    // width: 100%;
-    
-                                    // }
                             }
                             .swiper{
                                 height: 500px;
@@ -3907,46 +3660,22 @@ body{
                                     .swiper-img{
                                         width: 100%;
                                         border-radius: 20px;
-                                        // border: 1px solid red;
                                         background-size: cover;
                                         background-position: center;
-                                        // img{
-                                        //     width: 100%;
-                                        //     height: 300px;
-                                        // }
                                     }
                                     .swiper-wrapper{
                                         width: 80%;
                                         height: 100%;
-                                        // border: 1px solid red;
     
                                         text-align: center;
                                         font-size: 18px;
                                         background: #fff;
-    
-                                        // display: -webkit-box;
-                                        // display: -ms-flexbox;
-                                        // display: -webkit-flex;
-                                        // display: flex;
-                                        // -webkit-box-pack: center;
-                                        // -ms-flex-pack: center;
-                                        // -webkit-justify-content: center;
-                                        // justify-content: center;
-                                        // -webkit-box-align: center;
-                                        // -ms-flex-align: center;
-                                        // -webkit-align-items: center;
-                                        // align-items: center;
-    
                                         .swiperSlide-img{
                                             background-size: cover;
                                             background-position: center;
                                             border-radius: 20px;
-                                            // display: block;
                                             width: 100%;
                                             height: 100%;
-                                            // // background-color: red;
-                                            // object-fit: cover;
-                                            /* Center slide text vertically */
                                         
                                         }
                                     }
@@ -3984,10 +3713,6 @@ body{
                                     object-fit: cover;
                                     scroll-snap-align: center;
                                 }
-                                    // img{
-                                    // width: 100%;
-    
-                                    // }
                             }
                             .swiper{
                                 height: 250px;
@@ -4001,14 +3726,12 @@ body{
                                     .swiper-img{
                                         width: 100%;
                                         border-radius: 20px;
-                                        // border: 1px solid red;
                                         background-size: cover;
                                         background-position: center;
                                     }
                                     .swiper-wrapper{
                                         width: 95%;
                                         height: 100%;
-                                        // border: 1px solid red;
     
                                         text-align: center;
                                         font-size: 18px;
@@ -4018,7 +3741,6 @@ body{
                                             background-size: cover;
                                             background-position: center;
                                             border-radius: 20px;
-                                            // display: block;
                                             width: 100%;
                                             height: 100%;
                                         }
@@ -4103,7 +3825,6 @@ body{
                 }
                 .modal{
                     height: 100%;
-                    // overflow: scroll;
                     .modal-content{
                         overflow: scroll;
                         height: 90vh;
@@ -4193,7 +3914,6 @@ body{
                 }
                 .modal{
                     height: 100%;
-                    // overflow: scroll;
                     .modal-content{
                         overflow: scroll;
                         height: 90vh;

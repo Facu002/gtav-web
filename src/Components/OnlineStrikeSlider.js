@@ -9,7 +9,6 @@ import OnlineActivityOriginalBackground from '../media/Online-Strike-Original.jp
 
 function OnlineStrikeSlider() {
     function nextButton() {
-        // const slideWidth = slide.width;
         let sliderContainer = document.querySelector('.StrikeCards-container');
         sliderContainer.scrollLeft += 600;
         if (window.screen.width < 400) {
@@ -17,7 +16,6 @@ function OnlineStrikeSlider() {
         }
     }
     function prevButton() {
-        // const slideWidth = slide.width;
         let sliderContainer = document.querySelector('.StrikeCards-container');
         sliderContainer.scrollLeft -= 600;
         if (window.screen.width < 400) {
@@ -67,13 +65,6 @@ function OnlineStrikeSlider() {
             bg={`url(${OnlineActivityDiamondBackground})`}
             info={'Lleva a cabo el robo más sofisticado y atrevido jamás visto en la ciudad de Los Santos en Golpe a The Diamond Casino.   The Diamond Casino & Resort pertenece a los Duggan, una despiadada familia texana de magnates de la industria petroquímica que le arrebató el control a Tao Cheng y la tríada, y que ha hecho que el negocio siga viento en popa, a pesar de su cuestionable capacidad de gestión. Ya es hora de hacer algo al respecto de ese mensaje críptico que recibiste de Cheng Family Holdings. Georgina Cheng (vicepresidenta de Cheng Holdings, hermana pequeña del fiestero Tao y más equilibrada y formal que este) se ha propuesto dar a los Duggan donde más les duele: quiere acceder a la cámara acorazada de alta seguridad de The Diamond y robar todo lo que contiene. Ahora que Georgina dirige el cotarro, y que Lester Crest (un hacker muy raro que lidera la operación) y su equipo están dispuestos a ayudarla, llevarán a cabo un ambicioso golpe donde tendrán que enfrentarse a medidas de seguridad punteras, opciones de preparación casi ilimitadas y un botín desmesurado.'}
             />
-
-{/* 
-            <OnlineDLCCard 
-            title={'Golpe a The Diamond Casino'}
-            bg={`url(${OnlineActivityDiamondBackground})`}
-
-            /> */}
 
             <OnlineStrikeCard
             title={'Golpe del Juicio Final'}

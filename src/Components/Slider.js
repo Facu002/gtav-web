@@ -1,8 +1,6 @@
 import React from 'react';
 
 function Slider() {
-  
-  
   return (
     <div class="glider-container">
         <img className='glider-img' src='https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/k995/26b3c013691c5f01c8bff0e1891e7bf4a6bd9da9.jpg'/>

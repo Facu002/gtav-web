@@ -25,7 +25,6 @@ function GameCard(props) {
                 <img src={xboxone} alt="xboxone" />
                 <img src={pc} alt="pc" />
             </div>
-            {/* <span className='GameCard-text__info'>Mejora del modo Individual disponible en el juego</span> */}
         </div>
         
         <div className={isActive ? 'GameCard__btn GameCard__btn-select' : 'GameCard__btn'} onClick={toggleClass}>

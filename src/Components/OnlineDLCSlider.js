@@ -1,6 +1,5 @@
 import React from 'react'
 import OnlineDLCCard from './OnlineDLCCard'
-// import sliderAnimation from './sliderAnimation.js'
 import Slider from './Slider.js'
 import Swiper from './Swiper'
 import SwiperSlider from './SwiperContainer.js'
@@ -31,12 +30,8 @@ import OnlineDiamondPromoMobile from '../media/Online-Diamond-promoImg-mb.png'
 import OnlineDiamondBackground from '../media/Online-Diamond-background.jpg'
 
 function OnlineDLCSlier() {
-  // let sliderContainer = document.querySelector('.card-container');
-  // let slide = document.querySelector('.DlcCard-container');
-  // let index = 0
-  
+
     function nextButton() {
-      // const slideWidth = slide.width;
       let sliderContainer = document.querySelector('.DlcCards-container');
       sliderContainer.scrollLeft += 600;
       if (window.screen.width < 400) {
@@ -45,7 +40,6 @@ function OnlineDLCSlier() {
       }
     }
     function prevButton() {
-      // const slideWidth = slide.width;
       let sliderContainer = document.querySelector('.DlcCards-container');
       sliderContainer.scrollLeft -= 600;
       if (window.screen.width < 400) {
@@ -294,18 +288,7 @@ function OnlineDLCSlier() {
           Con todas las fiestas que organiza en las playas y el constante movimiento de droga desde los campos de cultivo cercanos, la isla podría parecer un complejo hotelero de moda convertido en festival de música, si no fuera por los secuaces contratados para proteger la isla armados con fusiles de asalto.</p>,
           <img src='https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/k995/a1cc84f3fdee22dc8348f3278f94eeee1125d262.jpg' alt="img-modal" />,
           <p>Miguel tiene plaza en un jet privado lleno de DJ que van a pinchar a Cayo Perico. Es la oportunidad perfecta para infiltrarte y examinar una de las fortalezas más seguras que se pueden comprar con dinero. Una vez allí, abandona discretamente la fiesta para localizar el complejo donde se encuentran los documentos. Mientras evitas a los guardias armados y las cámaras de seguridad, fíjate bien en cualquier punto débil, como entradas ocultas, puntos de salida y otros fallos de seguridad que podrías aprovechar más adelante. No llames la atención y recopila toda la información disponible para aumentar tu probabilidad de éxito cuando llegue la hora de la verdad.</p>,
-          // <Swiper
-          // Img={[
-          //   "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/k995/8e083b54e63db8a5e40dfb4f0de00ce1adcf1dac.jpg",
-          //   "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/k995/84926840c1c25b5a718fb3d3e004e54077a802e1.jpg",
-          //   "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/k995/389d37a47b81f4cbbb33068a43aa7a6e8150a123.jpg",
-          //   "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/k995/3b9950ead7b1efe87819baca850315474b3f901c.jpg",
-          //   "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/k995/a1f303bc078dba6be23766d89917d98689e3b610.jpg"
-          //   // "caca",
-          //   // "pis",
-          //   // "popo"
-          // ]}
-          // />,
+          
           <SwiperSlider
           imagenes={[
               "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/k995/26b3c013691c5f01c8bff0e1891e7bf4a6bd9da9.jpg",
@@ -317,7 +300,6 @@ function OnlineDLCSlier() {
             ]}
             />,
           <img src='https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/k995/4260f863e23b0dad68fb3526a5d2c10b7b18e6fc.jpg' alt="img-modal" />,
-          // <Slider/>,
           <h4>Cómo robar al Rubio</h4>,
           <p>Al contrario que en golpes previos, no hay un estilo específico a la hora de planificar el de Cayo Perico.
             <br/>

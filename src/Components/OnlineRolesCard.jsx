@@ -1,15 +1,9 @@
-import {React, useState, useEffect} from 'react'
+import {React, useState} from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 
 function OnlineRolesCard(props) {
     const [toggle, setToggle] = useState(false)
 
-    // useEffect(() => {
-    // console.log(toggle);
-    // return () => {
-    //     console.log('ok');
-    // }
-    // }, [toggle])
     
 const item = {
     visible: { opacity: [0,0,1], x: 0, transition: {duration: 0.3,stiffness: 1}},
@@ -65,13 +59,6 @@ const item = {
 
                         <motion.div className="container-text"
                         variants={item}
-                        // initial={{ opacity: 0}}
-                        // animate={{
-                        // opacity: 1,
-                        // x: [-500, 0],
-                        // scale: 1,
-                        // transition: {duration: 1,stiffness: 1}}}
-                        // exit={{ opacity: 0}} 
                         >
                         <div>
                             <span>Carreras delictivas</span>

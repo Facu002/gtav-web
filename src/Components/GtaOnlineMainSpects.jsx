@@ -8,7 +8,6 @@ function GtaOnlineMainSpects() {
         <div className='MainSpects-container'>
 
             <OnlineDLCSlider/>
-            {/* <DLCSlider/> */}
             <OnlineRolesSlider/>
             <OnlineStrikeSlider/>
         </div>

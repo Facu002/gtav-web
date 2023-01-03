@@ -782,7 +782,6 @@ body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text 
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  /* Center slide text vertically */
 }
 body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
   background: rgb(255, 255, 255);
@@ -795,499 +794,6 @@ body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text 
   background-color: white;
 }
 body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
-  background: rgb(255, 255, 255);
-  color: #fff;
-  background-color: white;
-}
-body .caca {
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  overflow: visible;
-}
-body .caca .swiper {
-  height: 60vh;
-  width: 100%;
-  overflow: visible;
-}
-body .caca .swiper .DlcCards-container {
-  height: 60vh;
-  width: 700px;
-  display: flex;
-  align-items: flex-end;
-  overflow-x: scroll;
-  overflow-y: visible;
-  scroll-behavior: smooth;
-  list-style: none;
-  padding: 0;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-body .caca .swiper .DlcCards-container::-webkit-scrollbar {
-  display: none;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container {
-  border: 1px solid rgb(255, 255, 0);
-  width: 100%;
-  max-width: 700px;
-  height: 90%;
-  max-height: 900px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.5s;
-  background-position: center;
-  background-size: cover;
-  margin: 0 1.5rem 0 0;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container:hover {
-  box-shadow: inset 0px 0px 0px 1px #fff;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container:hover .promo-container .promo {
-  transition: all 0.9s;
-  left: -10px;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container .logo {
-  height: 150px;
-  width: 150px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  z-index: 5;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container .promo-container {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container .promo-container .promo-bg {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.599137931) 53%, rgba(0, 0, 0, 0) 100%);
-  z-index: 3;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container .promo-container .promo {
-  position: absolute;
-  top: -5%;
-  left: 0;
-  background-position: center;
-  background-size: cover;
-  z-index: 2;
-  height: 105%;
-  width: 100%;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container .title {
-  font-size: 2rem;
-  font-weight: 800;
-  z-index: 5;
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  color: white;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal {
-  background-color: rgba(0, 0, 0, 0.904);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
-  transform: translate(-50%, -50%);
-  width: 101%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap {
-  border-radius: 20px;
-  border: 1px solid #777;
-  width: 95vw;
-  height: 95vh;
-  max-width: 1200px;
-  overflow: hidden;
-  background-color: #000;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
-  -ms-overflow-style: 10px;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container::-webkit-scrollbar {
-  display: none;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .close-btn {
-  position: absolute;
-  right: 5%;
-  top: 10%;
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
-  border: 1px solid #777;
-  background-color: rgba(26, 26, 26, 0.662745098);
-  cursor: pointer;
-  color: #fff;
-  transition: all 0.3s;
-  z-index: 20;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .close-btn:hover, body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .close-btn:active {
-  transition: all 0.3s;
-  color: #000;
-  background-color: #fff;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner {
-  width: 100%;
-  height: 60%;
-  min-height: 500px;
-  background-position: center;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner .logo {
-  width: 150px;
-  max-width: 150px;
-  max-height: 150px;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  z-index: 1;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container {
-  width: 100%;
-  height: 90%;
-  max-height: 500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-position: top;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border: 1px solid #777;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container {
-  height: 120%;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  border: none;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container .promo {
-  width: 100%;
-  height: 135%;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text {
-  height: 100%;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container {
-  width: 70%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 2rem auto;
-  color: white;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container img {
-  width: 100%;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container h4 {
-  font-size: 2.5rem;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container p, body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container span, body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container ul {
-  font-size: 1.5rem;
-  line-height: 40px;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
-  overflow-x: scroll;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  cursor: -webkit-grab;
-  cursor: grab;
-  display: flex;
-  width: 100%;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container .glider-img {
-  flex-shrink: 0;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  scroll-snap-align: center;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper {
-  height: 500px;
-  width: 120%;
-  position: relative;
-  z-index: 3;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 2rem auto;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
-  width: 100%;
-  border-radius: 20px;
-  background-size: cover;
-  background-position: center;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper {
-  width: 80%;
-  height: 100%;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper .swiperSlide-img {
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
-  background: rgb(255, 255, 255);
-  color: #fff;
-  background-color: white;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
-  background: rgb(255, 255, 255);
-  color: #fff;
-  background-color: white;
-}
-body .caca .swiper .DlcCards-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
-  background: rgb(255, 255, 255);
-  color: #fff;
-  background-color: white;
-}
-body .caca .btn-container {
-  align-self: flex-end;
-  right: 0;
-  width: 200px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: #9c8f00;
-}
-body .caca .btn-container .swiper-button-next,
-body .caca .btn-container .swiper-button-prev {
-  position: inherit;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  padding: 0;
-  margin: 0;
-}
-body .caca .DlcCard-container-Modal {
-  background-color: rgba(0, 0, 0, 0.904);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
-  transform: translate(-50%, -50%);
-  width: 101%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body .caca .DlcCard-container-Modal .wrap {
-  border-radius: 20px;
-  border: 1px solid #777;
-  width: 95vw;
-  height: 95vh;
-  max-width: 1200px;
-  overflow: hidden;
-  background-color: #000;
-}
-body .caca .DlcCard-container-Modal .wrap .container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
-  -ms-overflow-style: 10px;
-}
-body .caca .DlcCard-container-Modal .wrap .container::-webkit-scrollbar {
-  display: none;
-}
-body .caca .DlcCard-container-Modal .wrap .container .close-btn {
-  position: absolute;
-  right: 5%;
-  top: 10%;
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
-  border: 1px solid #777;
-  background-color: rgba(26, 26, 26, 0.662745098);
-  cursor: pointer;
-  color: #fff;
-  transition: all 0.3s;
-  z-index: 20;
-}
-body .caca .DlcCard-container-Modal .wrap .container .close-btn:hover, body .caca .DlcCard-container-Modal .wrap .container .close-btn:active {
-  transition: all 0.3s;
-  color: #000;
-  background-color: #fff;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-banner {
-  width: 100%;
-  height: 60%;
-  min-height: 500px;
-  background-position: center;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-banner .logo {
-  width: 150px;
-  max-width: 150px;
-  max-height: 150px;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  z-index: 1;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-banner .promo-container {
-  width: 100%;
-  height: 90%;
-  max-height: 500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-position: top;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border: 1px solid #777;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container {
-  height: 120%;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  border: none;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container .promo {
-  width: 100%;
-  height: 135%;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text {
-  height: 100%;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container {
-  width: 70%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 2rem auto;
-  color: white;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container img {
-  width: 100%;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container h4 {
-  font-size: 2.5rem;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container p, body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container span, body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container ul {
-  font-size: 1.5rem;
-  line-height: 40px;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
-  overflow-x: scroll;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  cursor: -webkit-grab;
-  cursor: grab;
-  display: flex;
-  width: 100%;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container .glider-img {
-  flex-shrink: 0;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  scroll-snap-align: center;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper {
-  height: 500px;
-  width: 120%;
-  position: relative;
-  z-index: 3;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 2rem auto;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
-  width: 100%;
-  border-radius: 20px;
-  background-size: cover;
-  background-position: center;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper {
-  width: 80%;
-  height: 100%;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-wrapper .swiperSlide-img {
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
-  background: rgb(255, 255, 255);
-  color: #fff;
-  background-color: white;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
-  background: rgb(255, 255, 255);
-  color: #fff;
-  background-color: white;
-}
-body .caca .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar-drag:after {
   background: rgb(255, 255, 255);
   color: #fff;
   background-color: white;
@@ -2565,7 +2071,7 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     width: 90%;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box button {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     width: 90%;
     height: 50px;
     background-color: #000;
@@ -3007,7 +2513,7 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     margin: 0 auto;
   }
   body .GamePurchase-container .Cards .GameCard-container {
-    max-height: 800px;
+    max-height: 680px;
     flex-shrink: 0;
     width: 100%;
     max-width: 90%;
@@ -3046,11 +2552,11 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 90%;
     width: 90%;
   }
   body .GamePurchase-container .Cards .GameCard-container .GameCard__btn-select .select-box button {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     width: 90%;
     height: 50px;
     background-color: #000;
@@ -3065,7 +2571,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     height: 60%;
   }
   body .DlcSlider-container {
-    border: 1px solid rgb(255, 234, 0);
     height: 70vh;
   }
   body .DlcSlider-container .DlcCards-container {
@@ -3134,7 +2639,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     color: white;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container--mb {
-    border: 1px solid rgb(255, 204, 0);
     height: 100%;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .logo {
@@ -3240,7 +2744,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     border: none;
   }
   body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container .promo {
-    border: 1px solid rgb(0, 255, 242);
     width: 150%;
     height: 100%;
   }
@@ -3313,7 +2816,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    /* Center slide text vertically */
   }
   body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
     background: rgb(255, 255, 255);
@@ -3376,7 +2878,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    /* Center slide text vertically */
   }
   body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
     background: rgb(255, 255, 255);
@@ -3402,7 +2903,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     max-height: 500px;
     width: 100vw;
     margin: 0 auto;
-    border: 1px solid red;
   }
   body .swiperSlide .DlcCards-container::-webkit-scrollbar {
     display: none;
@@ -3464,7 +2964,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     color: white;
   }
   body .swiperSlide .DlcCards-container .DlcCard-container--mb {
-    border: 1px solid rgb(255, 204, 0);
     height: 100%;
   }
   body .swiperSlide .DlcCards-container .DlcCard-container--mb .bg .logo {
@@ -3570,7 +3069,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     border: none;
   }
   body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-banner .promo-container .promo-container .promo {
-    border: 1px solid rgb(0, 255, 242);
     width: 150%;
     height: 100%;
   }
@@ -3643,7 +3141,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    /* Center slide text vertically */
   }
   body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-scrollbar .swiper-scrollbar.swiper-scrollbar-horizontal {
     background: rgb(255, 255, 255);
