@@ -801,504 +801,6 @@ body{
         }
     }
     
-    // .caca{
-    //     width: 100%;
-    //     height: auto;
-    //     position: relative;
-    //     display: flex;
-    //     flex-direction: column;
-    //     overflow: visible;
-    //     border: 3px solid yellow;
-    //     background-color: #FCAF17;
-    //     .swiper{
-    //         height: 60vh;
-    //         width: 100%;
-    //         overflow: visible;
-    //         .DlcCards-container{
-    //             height: 60vh;
-    //             width: 700px;
-    //             display: flex;
-    //             align-items: flex-end;
-    //             overflow-x: scroll;
-    //             overflow-y: visible;
-    //             scroll-behavior: smooth;
-    //             list-style: none;
-    //             padding: 0;
-                
-    //             scrollbar-width: none; 
-    //             -ms-overflow-style: none; 
-    //             &::-webkit-scrollbar {
-    //                 display: none;
-    //             }
-    //             .DlcCard-container {
-    //                 width: 100%;
-    //                 max-width: 700px;
-    //                 height: 90%;
-    //                 max-height: 900px;
-    //                 flex-shrink: 0;
-    //                 border-radius: 15px;
-    //                 position: relative;
-    //                 cursor: pointer;
-    //                 transition: all 0.5s;
-    //                 background-position: center;
-    //                 background-size: cover;
-    //                 margin: 0 1.5rem 0 0;
-    //                 &:hover{
-    //                     box-shadow:inset 0px 0px 0px 1px #fff;
-    //                     .promo-container{    
-    //                         .promo{
-    //                             transition: all 0.9s;
-    //                             left: -10px;
-    //                         }
-    //                     }
-    //                 }
-    //                 .logo{
-    //                     height: 150px;
-    //                     width: 150px;
-    //                     position: absolute;
-    //                     top: 50px;
-    //                     left: 50px;
-    //                     z-index: 5;
-    //                 }
-    //                 .promo-container{
-    //                     width: fit-content;
-    //                     height: fit-content;
-    //                     .promo-bg{
-    //                         height: 100%;
-    //                         width: 100%;
-    //                         background: linear-gradient(0deg, rgba(0,0,0,0.5991379310344828) 53%, rgba(0,0,0,0) 100%);
-    //                         z-index: 3;
-    //                         position: absolute;
-    //                         top: 0;
-    //                         left: 0;
-    //                     }
-    //                     .promo{
-    //                         position: absolute;
-    //                         top: -5%;
-    //                         left: 0;
-    //                         background-position: center;
-    //                         background-size: cover;
-    //                         z-index: 2;
-    //                         height: 105%;
-    //                         width: 100%;
-    //                         cursor: pointer;
-    //                         transition: all 0.3s;
-    //                     }
-    //                 }
-    //                 .title{
-    //                     font-size: 2rem;
-    //                     font-weight: 800;
-    //                     z-index: 5;
-    //                     position: absolute;
-    //                     bottom: 50px;
-    //                     left: 50px;
-    //                     color: #ffff;
-    //                 }
-    //             }
-    //             .DlcCard-container-Modal{
-    //                 background-color: rgba(0, 0, 0, 0.904);
-    //                 position: fixed;
-    //                 top: 50%;
-    //                 left: 50%;
-    //                 z-index: 100;
-    //                 transform: translate(-50%, -50%);
-    //                 width: 101%;
-    //                 height: 100%;
-    //                 margin: 0 auto;
-    //                 display: flex;
-    //                 align-items: center;
-    //                 justify-content: center;
-    //                 .wrap{
-    //                     border-radius: 20px;
-    //                     border: 1px solid #777;
-    //                     width: 95vw;
-    //                     height: 95vh;
-    //                     max-width: 1200px;
-    //                     overflow: hidden;
-    //                     background-color: #000;
-    //                 .container{
-    //                     margin: 0 auto;
-    //                     display: flex;
-    //                     flex-direction: column;
-    //                     align-items: center;
-    //                     width: 100%;
-    //                     height: 100%;
-    //                     overflow-y: scroll;
-    //                     overflow-x: hidden;
-    //                     scroll-behavior: smooth;
-    //                     scrollbar-width: thin;
-    //                     -ms-overflow-style: 10px; 
-    //                     &::-webkit-scrollbar {
-    //                         display: none;
-    //                     }
-                        
-    //                     .close-btn{
-    //                         position: absolute;
-    //                         right: 5%;
-    //                         top: 10%;
-    //                         width: 40px;
-    //                         height: 40px;
-    //                         border-radius: 100px;
-    //                         border: 1px solid #777;
-    //                         background-color: #1a1a1aa9;
-    //                         cursor: pointer;
-    //                         color: #fff;
-    //                         transition: all 0.3s;
-    //                         z-index: 20;
-    //                         &:hover,&:active{
-    //                             transition: all 0.3s;
-    //                             color: #000;
-    //                             background-color: #fff;
-    //                         }
-    //                     }
-    //                     .modal-banner{
-    //                         width: 100%;
-    //                         height: 60%;
-    //                         min-height: 500px;
-    //                         background-position: center;
-    //                         position: relative;
-    //                         display: flex;
-    //                         align-items: flex-end;
-    //                         .logo{
-    //                             width: 150px;
-    //                             max-width: 150px;
-    //                             max-height: 150px;
-    //                             position: absolute;
-    //                             top: 10%;
-    //                             left: 10%;
-    //                             z-index: 1;
-    //                         }
-    //                         .promo-container{
-    //                             width: 100%;
-    //                             height: 90%;
-    //                             max-height: 500px;
-    //                             margin: 0 auto;
-    //                             display: flex;
-    //                             justify-content: center;
-    //                             align-items: flex-end;
-    //                             background-position: top;
-    //                             background-size: cover;
-    //                             border-top-left-radius: 15px;
-    //                             border-top-right-radius: 15px;
-    //                             border: 1px solid #777;
-    //                             .promo-container{
-    //                                 height: 120%;
-    //                                 overflow: hidden;
-    //                                 display: flex;
-    //                                 align-items: flex-start;
-    //                                 justify-content: center;
-    //                                 border: none;
-    //                                 .promo{
-    //                                     width: 100%;
-    //                                     height: 135%;
-    //                                 }
-    //                             }
-    //                         }
-    //                     }
-    //                     .modal-text{
-    //                         height: 100%;
-    //                         .text-container{
-    //                             width: 70%;
-    //                             height: fit-content;
-    //                             margin: 2rem auto;
-    //                             color: #ffff;
-    //                             img{
-    //                                 width: 100%;
-    //                             }
-    //                             h4{
-    //                                 font-size: 2.5rem;
-    //                             }
-    //                             p,span,ul{
-    //                                 font-size: 1.5rem;
-    //                                 line-height: 40px;
-    //                             }
-    //                             .glider-container{
-    //                                 overflow-x: scroll;
-    //                                 scroll-snap-type: x mandatory;
-    //                                 cursor: grab;
-    //                                 display: flex;
-    //                                 width:100% ;
-    //                                 .glider-img{
-    //                                     flex-shrink: 0;
-    //                                     width: 100%;
-    //                                     object-fit: cover;
-    //                                     scroll-snap-align: center;
-    //                                 }
-    //                             }
-    //                             .swiper{
-    //                                 height: 500px;
-    //                                 width: 120%;
-    //                                 position: relative;
-    //                                 z-index: 3;
-    //                                 left: 50%;
-    //                                 transform: translateX(-50%);
-    //                                 margin: 2rem auto;
-    //                                 cursor: grab;
-    //                                     .swiper-img{
-    //                                         width: 100%;
-    //                                         border-radius: 20px;
-    //                                         background-size: cover;
-    //                                         background-position: center;
-    //                                     }
-    //                                     .swiper-wrapper{
-    //                                         width: 80%;
-    //                                         height: 100%;
-        
-    //                                         text-align: center;
-    //                                         font-size: 18px;
-    //                                         background: #fff;
-        
-    //                                         .swiperSlide-img{
-    //                                             background-size: cover;
-    //                                             background-position: center;
-    //                                             border-radius: 20px;
-    //                                             width: 100%;
-    //                                             height: 100%;
-    //                                         }
-    //                                     }
-                                    
-    //                                 .swiper-scrollbar{
-    //                                     .swiper-scrollbar.swiper-scrollbar-horizontal{
-    //                                         background: rgb(255, 255, 255); 
-    //                                         color: #fff;
-    //                                         background-color: #ffff;
-    //                                     }
-    //                                     .swiper-scrollbar-drag{
-    //                                         background: rgb(255, 255, 255); 
-    //                                         color: #fff;
-    //                                         background-color: #ffff;
-    //                                     }
-    //                                     .swiper-scrollbar-drag:after{
-    //                                         background: rgb(255, 255, 255); 
-    //                                         color: #fff;
-    //                                         background-color: #ffff;
-    //                                     }
-        
-    //                                 }
-    //                             }
-    //                         }
-    //                     }
-    //                 }
-    //             }
-        
-    //             } 
-    //         }
-            
-    //     }
-    //     .btn-container{
-    //         align-self: flex-end;
-    //         right: 0;
-    //         width: 200px;
-    //         height: 60px;
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //         position: relative;
-    //         background-color: #9c8f00;
-    //         .swiper-button-next,
-    //         .swiper-button-prev {
-    //             position: inherit;
-    //             top: 0;
-    //             left: 0;
-    //             bottom: 0;
-    //             right: 0;
-    //             width: 50px;
-    //             height: 50px;
-    //             background-color: white;
-    //             background-color: rgba(255, 255, 255, 0.5);
-    //             border-radius: 10px;
-    //             padding: 0;
-    //             margin: 0;
-    //         }
-    //     }
-    //     .DlcCard-container-Modal{
-    //         background-color: rgba(0, 0, 0, 0.904);
-    //         position: fixed;
-    //         top: 50%;
-    //         left: 50%;
-    //         z-index: 100;
-    //         transform: translate(-50%, -50%);
-    //         width: 101%;
-    //         height: 100%;
-    //         margin: 0 auto;
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: center;
-    //         .wrap{
-    //             border-radius: 20px;
-    //             border: 1px solid #777;
-    //             width: 95vw;
-    //             height: 95vh;
-    //             max-width: 1200px;
-    //             overflow: hidden;
-    //             background-color: #000;
-    //         .container{
-    //             margin: 0 auto;
-    //             display: flex;
-    //             flex-direction: column;
-    //             align-items: center;
-    //             width: 100%;
-    //             height: 100%;
-    //             overflow-y: scroll;
-    //             overflow-x: hidden;
-    //             scroll-behavior: smooth;
-    //             scrollbar-width: thin;
-    //             -ms-overflow-style: 10px; 
-    //             &::-webkit-scrollbar {
-    //                 display: none;
-    //             }
-    //             .close-btn{
-    //                 position: absolute;
-    //                 right: 5%;
-    //                 top: 10%;
-    //                 width: 40px;
-    //                 height: 40px;
-    //                 border-radius: 100px;
-    //                 border: 1px solid #777;
-    //                 background-color: #1a1a1aa9;
-    //                 cursor: pointer;
-    //                 color: #fff;
-    //                 transition: all 0.3s;
-    //                 z-index: 20;
-    //                 &:hover,&:active{
-    //                     transition: all 0.3s;
-    //                     color: #000;
-    //                     background-color: #fff;
-    //                 }
-    //             }
-    //             .modal-banner{
-    //                 width: 100%;
-    //                 height: 60%;
-    //                 min-height: 500px;
-    //                 background-position: center;
-    //                 position: relative;
-    //                 display: flex;
-    //                 align-items: flex-end;
-                
-    //                 .logo{
-    //                     width: 150px;
-    //                     max-width: 150px;
-    //                     max-height: 150px;
-    //                     position: absolute;
-    //                     top: 10%;
-    //                     left: 10%;
-    //                     z-index: 1;
-    //                 }
-    //                 .promo-container{
-    //                     width: 100%;
-    //                     height: 90%;
-    //                     max-height: 500px;
-    //                     margin: 0 auto;
-    //                     display: flex;
-    //                     justify-content: center;
-    //                     align-items: flex-end;
-    //                     background-position: top;
-    //                     background-size: cover;
-    //                     border-top-left-radius: 15px;
-    //                     border-top-right-radius: 15px;
-    //                     border: 1px solid #777;
-    //                     .promo-container{
-    //                         height: 120%;
-    //                         overflow: hidden;
-    //                         display: flex;
-    //                         align-items: flex-start;
-    //                         justify-content: center;
-    //                         border: none;
-    //                         .promo{
-    //                             width: 100%;
-    //                             height: 135%;
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //             .modal-text{
-    //                 height: 100%;
-    //                 .text-container{
-    //                     width: 70%;
-    //                     height: fit-content;
-    //                     margin: 2rem auto;
-    //                     color: #ffff;
-    //                     img{
-    //                         width: 100%;
-    //                     }
-    //                     h4{
-    //                         font-size: 2.5rem;
-    //                     }
-    //                     p,span,ul{
-    //                         font-size: 1.5rem;
-    //                         line-height: 40px;
-    //                     }
-    //                     .glider-container{
-    //                         overflow-x: scroll;
-    //                         scroll-snap-type: x mandatory;
-    //                         cursor: grab;
-    //                         display: flex;
-    //                         width:100% ;
-    //                         .glider-img{
-    //                             flex-shrink: 0;
-    //                             width: 100%;
-    //                             object-fit: cover;
-    //                             scroll-snap-align: center;
-    //                         }
-    //                     }
-    //                     .swiper{
-    //                         height: 500px;
-    //                         width: 120%;
-    //                         position: relative;
-    //                         z-index: 3;
-    //                         left: 50%;
-    //                         transform: translateX(-50%);
-    //                         margin: 2rem auto;
-    //                         cursor: grab;
-    //                             .swiper-img{
-    //                                 width: 100%;
-    //                                 border-radius: 20px;
-    //                                 background-size: cover;
-    //                                 background-position: center;
-    //                             }
-    //                             .swiper-wrapper{
-    //                                 width: 80%;
-    //                                 height: 100%;
-    //                                 text-align: center;
-    //                                 font-size: 18px;
-    //                                 background: #fff;
-
-    //                                 .swiperSlide-img{
-    //                                     background-size: cover;
-    //                                     background-position: center;
-    //                                     border-radius: 20px;
-    //                                     width: 100%;
-    //                                     height: 100%;
-                                    
-    //                                 }
-    //                             }
-                            
-    //                         .swiper-scrollbar{
-    //                             .swiper-scrollbar.swiper-scrollbar-horizontal{
-    //                                 background: rgb(255, 255, 255); 
-    //                                 color: #fff;
-    //                                 background-color: #ffff;
-    //                             }
-    //                             .swiper-scrollbar-drag{
-    //                                 background: rgb(255, 255, 255); 
-    //                                 color: #fff;
-    //                                 background-color: #ffff;
-    //                             }
-    //                             .swiper-scrollbar-drag:after{
-    //                                 background: rgb(255, 255, 255); 
-    //                                 color: #fff;
-    //                                 background-color: #ffff;
-    //                             }
-
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     } 
-    // }
 
     .RolesSlider-container{
         margin: 1rem auto;
@@ -2506,6 +2008,13 @@ body{
         }
         .GamePurchase-container{
             overflow-x: hidden;
+            // overflow-x: auto;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            margin-bottom: 2rem;
             .GamePurchase-text{
                 display: flex;
                 justify-content: space-between;
@@ -2601,6 +2110,7 @@ body{
                 }
             }
         }
+
         .DlcSlider-container{
                 .DlcCards-container{
                     height: 80vh;
@@ -2903,8 +2413,7 @@ body{
                 
             }
             .bannerImg-frontImg{
-
-                background-image: url(http://localhost:3000/static/media/online-mobile-banner_img.8869ba3c6b6070a31ed9.png);
+                background-image: url(../media/online-mobile-banner_img.png);
                 background-position: center;
                 height: 100%;
                 width: 100%;
@@ -3017,8 +2526,13 @@ body{
             }
         }
         .GamePurchase-container{
-            overflow-x: hidden;
-
+            overflow-x: auto;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            margin-bottom: 2rem;
             .GamePurchase-text{
                 display: flex;
                 justify-content: space-between;
@@ -3028,17 +2542,14 @@ body{
                     height:fit-content;
                     border-radius: 5px;
                     overflow: hidden;
-
                     div{
                         display: flex;
                         align-items: center;
                         overflow: hidden;
                         background-color: #000;
-
                         svg{
                             cursor: pointer;
                             padding: 5px;
-
                             &:hover{
                                 background-color: #777;
                             }
@@ -3448,7 +2959,6 @@ body{
                 max-height: 500px;
                 width: 100vw;
                 margin: 0 auto;
-                // border: 1px solid red;
                 &::-webkit-scrollbar {
                     display: none;
                 }
@@ -3506,7 +3016,6 @@ body{
                     }
                 }
                 .DlcCard-container--mb{
-                    // border: 1px solid rgb(255, 204, 0);
                     height: 100%;
                     .bg{
                         .logo{
@@ -3772,7 +3281,6 @@ body{
     
             }
         }
-
         .RolesSlider-container{
             margin: 5rem auto;
             width: 100vw;

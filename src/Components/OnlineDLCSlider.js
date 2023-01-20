@@ -1,7 +1,5 @@
 import React from 'react'
 import OnlineDLCCard from './OnlineDLCCard'
-import Slider from './Slider.js'
-import Swiper from './Swiper'
 import SwiperSlider from './SwiperContainer.js'
 
 import OnlineCrimEnterLogo from '../media/Online-crimEnterp-Logo.svg'
@@ -134,7 +132,7 @@ function OnlineDLCSlier() {
         Los ciudadanos de Los Santos saben que solo hay una forma de envejecer: como un buen vino. Uno hasta los topes de formaldehído y cubierto de resina. Por eso, los vehículos más populares han recibido un lavado de cara. Descubre el Pegassi Zentorno, el Benefactor Stirling GT, el Grotti Turismo R y muchos más con nuevas cubiertas y modificaciones.<br />
         
         Además, Ammu-Nation ahora ofrece el fusil de precisión: un arma de fuego de cerrojo de largo alcance con una precisión mortal para conseguir un disparo rápido y limpio.</p>
-      ]}
+        ]}
         />
 
         <OnlineDLCCard 
@@ -432,11 +430,8 @@ function OnlineDLCSlier() {
           Ya es hora de hacer algo al respecto de ese mensaje críptico que recibiste de Cheng Family Holdings. Georgina Cheng (vicepresidenta de Cheng Holdings, hermana pequeña del fiestero Tao y más equilibrada y formal que este) se ha propuesto dar a los Duggan donde más les duele: quiere acceder a la cámara acorazada de alta seguridad de The Diamond y robar todo lo que contiene. 
           <br/>
           Ahora que Georgina dirige el cotarro, y que Lester Crest (un hacker muy raro que dirige la operación) y su equipo están dispuestos a ayudarla, llevarán a cabo un ambicioso golpe donde tendrán que enfrentarse a medidas de seguridad punteras, opciones de preparación casi ilimitadas y un botín desmesurado.</p>
-]}
+        ]}
         />
-        {/* <OnlineDLCCard />
-        <OnlineDLCCard />
-        <OnlineDLCCard /> */}
       </div>
     </div>
   )

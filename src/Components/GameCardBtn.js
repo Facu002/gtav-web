@@ -12,15 +12,8 @@ function GameCardBtn() {
     }
     function moveGameCardToRight() {
         let cards = document.querySelector('.Cards')
-        let cardsBtn = document.querySelector('.GameCardBtn')
+        // let cardsBtn = document.querySelector('.GameCardBtn')
         
-        // if (window.screen.width <= 800) {
-        //     cards.style.transform = 'translateX(-25%)'
-        //     cards.style.transition = 'all 0.8s'
-        // }
-        // if (window.screen.width <= 1000) {
-        //     cardsBtn.style.display = 'none'
-        // }
         if (window.screen.width <= 870) {
             cards.style.transform = 'translateX(-50%)'
             cards.style.transition = 'all 0.8s'

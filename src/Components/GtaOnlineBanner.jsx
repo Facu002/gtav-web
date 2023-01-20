@@ -16,10 +16,6 @@ function Banner() {
                         <h1>Grand Theft Auto Online</h1>
                         <p>Disfruta tanto en solitario como con tus amigos de la experiencia en GTA Online, un universo dinámico y en constante evolución para hasta 30 jugadores que incluye todas las mejoras y contenidos existentes publicados desde el lanzamiento.</p>
                     </div>
-                    {/* <div className="bannerText-container__btns">
-                    <button>Ver el tráiler</button>
-                    <button>Comprar ahora</button>
-                    </div> */}
                 </div>
             </div>
 

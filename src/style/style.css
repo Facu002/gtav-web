@@ -1989,6 +1989,12 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
   }
   body .GamePurchase-container {
     overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    margin-bottom: 2rem;
+  }
+  body .GamePurchase-container::-webkit-scrollbar {
+    display: none;
   }
   body .GamePurchase-container .GamePurchase-text {
     display: flex;
@@ -2368,7 +2374,7 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     height: 50vh;
   }
   body .banner-container__online .bannerImg-frontImg {
-    background-image: url(http://localhost:3000/static/media/online-mobile-banner_img.8869ba3c6b6070a31ed9.png);
+    background-image: url(../media/online-mobile-banner_img.png);
     background-position: center;
     height: 100%;
     width: 100%;
@@ -2475,7 +2481,13 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     width: 90%;
   }
   body .GamePurchase-container {
-    overflow-x: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    margin-bottom: 2rem;
+  }
+  body .GamePurchase-container::-webkit-scrollbar {
+    display: none;
   }
   body .GamePurchase-container .GamePurchase-text {
     display: flex;
