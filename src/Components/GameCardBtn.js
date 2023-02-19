@@ -30,7 +30,7 @@ function GameCardBtn() {
         <>
             <svg xmlns="http://www.w3.org/2000/svg" 
             onClick={moveGameCardToLeft}
-            class="icon icon-tabler icon-tabler-arrow-left" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            className="icon icon-tabler icon-tabler-arrow-left" width="30" height="30" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <line x1="5" y1="12" x2="19" y2="12" />
             <line x1="5" y1="12" x2="11" y2="18" />
@@ -40,7 +40,7 @@ function GameCardBtn() {
         <>
             <svg xmlns="http://www.w3.org/2000/svg" 
             onClick={moveGameCardToRight}
-            class="icon icon-tabler icon-tabler-arrow-right" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            className="icon icon-tabler icon-tabler-arrow-right" width="30" height="30" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <line x1="5" y1="12" x2="19" y2="12" />
             <line x1="13" y1="18" x2="19" y2="12" />

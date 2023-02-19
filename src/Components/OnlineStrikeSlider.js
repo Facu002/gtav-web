@@ -5,7 +5,7 @@ import OnlineDLCCard from './OnlineDLCCard'
 import OnlineActivityCayoPericoBackground from '../media/Online-Strike-CayoPerico.jpg'
 import OnlineActivityDiamondBackground from '../media/Online-Strike-Diamond.jpg'
 import OnlineActivityJudgeBackground from '../media/Online-Strike-Judge.jpg'
-import OnlineActivityOriginalBackground from '../media/Online-Strike-Original.jpg'
+import OnlineActivityOriginalBackground from '../media/Online-Strike-Original.webp'
 
 function OnlineStrikeSlider() {
     function nextButton() {

@@ -3,28 +3,28 @@ import OnlineDLCCard from './OnlineDLCCard'
 import SwiperSlider from './SwiperContainer.js'
 
 import OnlineCrimEnterLogo from '../media/Online-crimEnterp-Logo.svg'
-import OnlineCrimEnterPromo from '../media/Online-crimEnterp-promoImg.png'
-import OnlineCrimEnterPromoMobile from '../media/Online-crimEnterp-promoImg-mb.png'
+import OnlineCrimEnterPromo from '../media/Online-crimEnterp-promoImg.webp'
+import OnlineCrimEnterPromoMobile from '../media/Online-crimEnterp-promoImg-mb.webp'
 import OnlineCrimEnterBackground from '../media/Online-crimEnterp-background.jpg'
 
 import OnlineContractLogo from '../media/Online-contract-Logo.png'
 import OnlineContractPromo from '../media/Online-contract-promoImg.png'
-import OnlineContractPromoMobile from '../media/Online-contract-promoImg-mb.png'
+import OnlineContractPromoMobile from '../media/Online-contract-promoImg-mb.webp'
 import OnlineContractBackground from '../media/Online-contract-background.jpg'
 
 import OnlineTunersLogo from '../media/Online-tuners-Logo.png'
-import OnlineTunersPromo from '../media/Online-tuners-promoImg.png'
+import OnlineTunersPromo from '../media/Online-tuners-promoImg.webp'
 import OnlineTunersPromoMobile from '../media/Online-tuners-promoImg-mb.png'
 import OnlineTunersBackground from '../media/Online-tuners-background.jpg'
 
 import OnlineCayoPericoLogo from '../media/Online-CayoPerico-Logo.svg'
-import OnlineCayoPericoPromo from '../media/Online-CayoPerico-promoImg.png'
+import OnlineCayoPericoPromo from '../media/Online-CayoPerico-promoImg.webp'
 import OnlineCayoPericoPromoMobile from '../media/Online-CayoPerico-promoImg-mb.png'
 import OnlineCayoPericoBackground from '../media/Online-CayoPerico-background.jpg'
 
 import OnlineDiamondLogo from '../media/Online-Diamond-Logo.svg'
 import OnlineDiamondPromo from '../media/Online-Diamond-promoImg.png'
-import OnlineDiamondPromoMobile from '../media/Online-Diamond-promoImg-mb.png'
+import OnlineDiamondPromoMobile from '../media/Online-Diamond-promoImg-mb.webp'
 import OnlineDiamondBackground from '../media/Online-Diamond-background.jpg'
 
 function OnlineDLCSlier() {

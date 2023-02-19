@@ -2,22 +2,21 @@ import {React} from 'react'
 
 import OnlineRolesCard from './OnlineRolesCard'
 
-import OnlineActivityMoneyPromo from '../media/OnlineActivity-money.png'
+import OnlineActivityMoneyPromo from '../media/OnlineActivity-money.webp'
 import OnlineActivityMoneyBackground from '../media/OnlineActivity-money-background.jpg'
 
-import OnlineActivityVehiclesPromo from '../media/OnlineActivity-vehicles.png'
+import OnlineActivityVehiclesPromo from '../media/OnlineActivity-vehicles.webp'
 import OnlineActivityVehiclesBackground from '../media/OnlineActivity-vehicles-background.jpg'
 
-import OnlineActivityFirearmsPromo from '../media/OnlineActivity-firearms.png'
+import OnlineActivityFirearmsPromo from '../media/OnlineActivity-firearms.webp'
 import OnlineActivityFirearmsBackground from '../media/OnlineActivity-firearms-background.jpg'
 
-import OnlineActivityNightPromo from '../media/OnlineActivity-night.png'
+import OnlineActivityNightPromo from '../media/OnlineActivity-night.webp'
 import OnlineActivityNightBackground from '../media/OnlineActivity-night-background.jpg'
 
 function OnlineRolesSlider() {
 
     function nextButton() {
-        // const slideWidth = slide.width;
         let sliderContainer = document.querySelector('.RolesCards-container');
         sliderContainer.scrollLeft += 600;
         if (window.screen.width < 400) {

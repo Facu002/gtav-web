@@ -20,7 +20,6 @@ body .nav {
 }
 body .nav .nav-main-title {
   display: flex;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -123,7 +122,6 @@ body .banner-container__online .bannerText-container {
 }
 body .banner-container .bannerText-container .bannerText-container__logos,
 body .banner-container__online .bannerText-container .bannerText-container__logos {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -176,7 +174,7 @@ body .banner-container__online .bannerImg-frontImg {
   height: 70vh;
   width: 100vw;
   max-width: 2000px;
-  background-image: url(../media/online-banner_img.png);
+  background-image: url(../media/online-banner_img.webp);
   background-size: cover;
   background-position: top;
   position: absolute;
@@ -576,10 +574,8 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container .logo {
   z-index: 5;
 }
 body .DlcSlider-container .DlcCards-container .DlcCard-container .promo-container {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -720,7 +716,6 @@ body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text 
 }
 body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container {
   width: 70%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 2rem auto;
@@ -738,9 +733,7 @@ body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text 
 }
 body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
   overflow-x: scroll;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  cursor: -webkit-grab;
+  scroll-snap-type: x mandatory;
   cursor: grab;
   display: flex;
   width: 100%;
@@ -760,7 +753,6 @@ body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text 
   left: 50%;
   transform: translateX(-50%);
   margin: 2rem auto;
-  cursor: -webkit-grab;
   cursor: grab;
 }
 body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
@@ -1288,7 +1280,6 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -1328,25 +1319,10 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
   body .navOnMenuOpen {
     width: 100%;
     z-index: 5;
-    position: -webkit-sticky;
     position: sticky;
     padding: 1rem 0;
     margin: 0 auto;
     top: 0;
-  }
-  @-webkit-keyframes dropMenu {
-    0% {
-      transform: translate(0, -100%);
-      z-index: 1;
-      height: 0;
-      background-color: #000;
-    }
-    100% {
-      transform: translate(0, 0);
-      z-index: 1;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.937);
-    }
   }
   @keyframes dropMenu {
     0% {
@@ -1360,20 +1336,6 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
       z-index: 1;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.937);
-    }
-  }
-  @-webkit-keyframes appearSections {
-    0% {
-      color: transparent;
-      cursor: none;
-    }
-    99% {
-      color: transparent;
-      cursor: none;
-    }
-    100% {
-      color: #fff;
-      cursor: none;
     }
   }
   @keyframes appearSections {
@@ -1400,8 +1362,7 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     height: 100vh;
-    -webkit-animation: dropMenu 0.5s;
-            animation: dropMenu 0.5s;
+    animation: dropMenu 0.5s;
     position: fixed;
     z-index: 5;
   }
@@ -1410,12 +1371,10 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     text-align: left;
     padding: 1rem 0 1rem 5%;
     text-decoration: none;
-    -webkit-animation: appearSections 0.5s;
-            animation: appearSections 0.5s;
+    animation: appearSections 0.5s;
   }
   body .dropdown-menu .dropmenu-sections__btn span {
-    -webkit-animation: appearSections 0.5s;
-            animation: appearSections 0.5s;
+    animation: appearSections 0.5s;
     font-weight: 800;
     font-size: 24px;
     color: #fff;
@@ -1445,7 +1404,6 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     top: auto;
     bottom: 0;
     width: 100%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     background: none;
@@ -1455,7 +1413,6 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     background: linear-gradient(0deg, rgb(0, 0, 0) 36%, rgba(0, 0, 0, 0) 100%);
   }
   body .banner-container div .bannerText-container .bannerText-container__logos {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -1500,7 +1457,7 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     height: 100%;
     width: 100%;
     max-width: 2000px;
-    background-image: url(../media/online-banner_img.png);
+    background-image: url(../media/online-banner_img.webp);
     background-size: cover;
     background-position: right 10% bottom 45%;
     position: absolute;
@@ -1522,7 +1479,6 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     background: linear-gradient(0deg, rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%);
   }
   body .banner-container__online .bannerText-container .bannerText-container__logos {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -1830,10 +1786,8 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     z-index: 5;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container .promo-container {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     border: 15px;
@@ -1946,7 +1900,7 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     height: 50vh;
   }
   body .banner-container__online .bannerImg-frontImg {
-    background-image: url(../media/online-mobile-banner_img.png);
+    background-image: url(../media/online-mobile-banner_img.webp);
     background-position: center;
     position: absolute;
     top: 0;
@@ -1967,7 +1921,6 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     background: linear-gradient(0deg, rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%);
   }
   body .banner-container__online .bannerText-container .bannerText-container__logos {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -2003,7 +1956,6 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
   }
   body .GamePurchase-container .GamePurchase-text .GameCardBtn {
     opacity: 1;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     border-radius: 5px;
@@ -2097,7 +2049,7 @@ body .StrikeSlider-container .modal .modal-content .right .container-text div p 
     display: none;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container,
-body .DlcSlider-container .DlcCards-container .DlcCard-container--mb {
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -2105,11 +2057,11 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb {
     width: 90vw;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container:hover,
-body .DlcSlider-container .DlcCards-container .DlcCard-container--mb:hover {
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb:hover {
     box-shadow: none;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container .bg,
-body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg {
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg {
     background-position: center;
     background-size: cover;
     height: 90%;
@@ -2120,17 +2072,17 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg {
     border-radius: 15px;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container .bg:hover,
-body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg:hover {
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg:hover {
     box-shadow: inset 0px 0px 0px 1px #fff;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container .bg:hover .promo-container .promo,
-body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg:hover .promo-container .promo {
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg:hover .promo-container .promo {
     transition: all 0.3s;
     left: -10px;
     transform: translateX(-25px);
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container .bg .logo,
-body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .logo {
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .logo {
     height: 250px;
     width: 250px;
     position: absolute;
@@ -2140,13 +2092,13 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .logo {
     z-index: 5;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container .bg .promo-container,
-body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-container {
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-container {
     height: 80%;
     width: 100%;
     border-radius: 15px;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container .bg .promo-container .promo,
-body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-container .promo {
+  body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-container .promo {
     position: absolute;
     top: auto;
     bottom: 0%;
@@ -2306,7 +2258,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
 @media (max-width: 600px) {
   body .nav .nav-main-title {
     display: flex;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -2329,7 +2280,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     background: linear-gradient(0deg, rgb(0, 0, 0) 36%, rgba(0, 0, 0, 0) 100%);
   }
   body .banner-container div .bannerText-container .bannerText-container__logos {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -2374,7 +2324,7 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     height: 50vh;
   }
   body .banner-container__online .bannerImg-frontImg {
-    background-image: url(../media/online-mobile-banner_img.png);
+    background-image: url(../media/online-mobile-banner_img.webp);
     background-position: center;
     height: 100%;
     width: 100%;
@@ -2496,7 +2446,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
   }
   body .GamePurchase-container .GamePurchase-text .GameCardBtn {
     opacity: 1;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     border-radius: 5px;
@@ -2613,10 +2562,8 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     z-index: 5;
   }
   body .DlcSlider-container .DlcCards-container .DlcCard-container .promo-container {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -2765,7 +2712,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
   }
   body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container {
     width: 100%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     margin: 2rem auto;
@@ -2784,9 +2730,7 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
   }
   body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
     overflow-x: scroll;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-    cursor: -webkit-grab;
+    scroll-snap-type: x mandatory;
     cursor: grab;
     display: flex;
     width: 100%;
@@ -2806,7 +2750,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     left: 50%;
     transform: translateX(-50%);
     margin: 2rem auto;
-    cursor: -webkit-grab;
     cursor: grab;
   }
   body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
@@ -2846,9 +2789,7 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
   }
   body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
     overflow-x: scroll;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-    cursor: -webkit-grab;
+    scroll-snap-type: x mandatory;
     cursor: grab;
     display: flex;
     width: 100%;
@@ -2868,7 +2809,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     left: 50%;
     transform: translateX(-50%);
     margin: 2rem auto;
-    cursor: -webkit-grab;
     cursor: grab;
   }
   body .DlcSlider-container .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
@@ -2938,10 +2878,8 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     z-index: 5;
   }
   body .swiperSlide .DlcCards-container .DlcCard-container .promo-container {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -3090,7 +3028,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
   }
   body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container {
     width: 100%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     margin: 2rem auto;
@@ -3109,9 +3046,7 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
   }
   body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
     overflow-x: scroll;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-    cursor: -webkit-grab;
+    scroll-snap-type: x mandatory;
     cursor: grab;
     display: flex;
     width: 100%;
@@ -3131,7 +3066,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     left: 50%;
     transform: translateX(-50%);
     margin: 2rem auto;
-    cursor: -webkit-grab;
     cursor: grab;
   }
   body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {
@@ -3171,9 +3105,7 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
   }
   body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .glider-container {
     overflow-x: scroll;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-    cursor: -webkit-grab;
+    scroll-snap-type: x mandatory;
     cursor: grab;
     display: flex;
     width: 100%;
@@ -3193,7 +3125,6 @@ body .DlcSlider-container .DlcCards-container .DlcCard-container--mb .bg .promo-
     left: 50%;
     transform: translateX(-50%);
     margin: 2rem auto;
-    cursor: -webkit-grab;
     cursor: grab;
   }
   body .swiperSlide .DlcCard-container-Modal .wrap .container .modal-text .text-container .swiper .swiper-img {

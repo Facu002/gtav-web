@@ -1,18 +1,18 @@
 import React from 'react'
-import character from '../media/characters.png'
+import character from '../media/characters.webp'
 import gtavlogo from '../media/cc4b8d5c455ccb92dc0c.svg'
 
-import panoramic1 from '../media/panoramic_banner.jpg'
+import panoramic1 from '../media/panoramic_banner.webp'
 import panoramic2 from '../media/panoramic_car.jpg'
 import panoramic3 from '../media/panoramic_guns.jpg'
 import panoramic4 from '../media/panoramic_heli.jpg'
 
 import gtaOnlineLogo from '../media/gtaOnline.svg'
-import gtaOnline from '../media/online_pj.png'
+import gtaOnline from '../media/online_pj.webp'
 
 import panoramic5 from '../media/panoramic_tunning.jpg'
 import panoramic6 from '../media/custom_online_chr.jpg'
-import panoramic7 from '../media/new_menu.jpg'
+import panoramic7 from '../media/new_menu.webp'
 import panoramic8 from '../media/recent_gtaonline_dlc.jpg'
 
 function MainSpects() {

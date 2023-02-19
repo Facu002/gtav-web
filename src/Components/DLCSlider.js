@@ -12,8 +12,8 @@ import 'swiper/css/scrollbar';
 
 
 import OnlineCrimEnterLogo from '../media/Online-crimEnterp-Logo.svg'
-import OnlineCrimEnterPromo from '../media/Online-crimEnterp-promoImg.png'
-import OnlineCrimEnterPromoMobile from '../media/Online-crimEnterp-promoImg-mb.png'
+import OnlineCrimEnterPromo from '../media/Online-crimEnterp-promoImg.webp'
+import OnlineCrimEnterPromoMobile from '../media/Online-crimEnterp-promoImg-mb.webp'
 import OnlineCrimEnterBackground from '../media/Online-crimEnterp-background.jpg'
 
 
